@@ -10,5 +10,8 @@
 
 ## Quais personas?
 
+--- 
 @nome-persona-1
-    Descrição: descrição da persona 1 
+
+Descrição: descrição da persona 1 
+---
