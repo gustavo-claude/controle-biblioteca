@@ -3,7 +3,7 @@
 > # Briefing: Classificação de Risco
 
 ## O que é?
-A classificação de Risco constitui uma funcionalidade integrada ao sistema de gestão hospitalar de uma unidade de pronto atendimento da rede municipal 
+A Classificação de Risco constitui uma funcionalidade integrada ao sistema de gestão hospitalar de uma unidade de pronto atendimento da rede municipal 
 de saúde pública, destinada a gerenciar o processo de triagem clínica com base nas diretrizes do Protocolo de Manchester. No âmbito da plataforma, essa 
 ferramenta organiza o fluxo assistencial desde a recepção e viabiliza a priorização do atendimento médico conforme a gravidade clínica do paciente, em 
 substituição ao critério exclusivo de ordem de chegada, o que otimiza a alocação dos recursos da unidade e eleva os níveis de segurança do cuidado.
