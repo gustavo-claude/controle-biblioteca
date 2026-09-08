@@ -30,7 +30,7 @@ Reduzir o tempo de triagem mantendo a segurança clínica, com 100% dos paciente
 - Não elimina a necessidade de registro clínico e documentação adequada no prontuário.
 Uma versão consolidada poderia ser:
 
-O que NÃO faz: 
+## O que NÃO faz: 
 
 -Não realiza diagnóstico, prescrição ou definição de condutas médicas; 
 
