@@ -1,3 +1,9 @@
+
+> 🌟 **EXEMPLO PADRÃO OURO:**  
+> Use este arquivo como modelo de referência para o nível de detalhe, estrutura e precisão esperados de uma história de usuário neste workspace.
+
+---
+
 ## **HU002 – Detalhes do Atendimento**
 
 ### **1. DESCRIÇÃO**
