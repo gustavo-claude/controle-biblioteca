@@ -1,43 +1,42 @@
-# Briefing do Produto: [Nome do Produto]
+# Briefing do Produto: Classificação de Risco
 
-> 💡 **PAPEL DESTE ARQUIVO:**  
-> O briefing é o resumo mínimo e concentrado do produto (15 a 20 linhas). Ele serve para calibrar rapidamente a IA quando você precisa de respostas ágeis sem carregar dezenas de documentos.  
-> 📏 **REGRA DE TAMANHO:** Não passe de 25 linhas. Cada linha deve conter um fato vital.
+> # Briefing: Classificação de Risco
 
----
+## O que a Classificação de Risco é?
+A Classificação de Risco constitui uma funcionalidade integrada ao sistema de gestão hospitalar de uma unidade de pronto atendimento da rede municipal 
+de saúde pública, destinada a gerenciar o processo de triagem clínica inspirada nas diretrizes do Protocolo de Manchester. No âmbito da plataforma, essa 
+ferramenta organiza o fluxo assistencial desde a recepção e viabiliza a priorização do atendimento médico conforme a gravidade clínica do paciente, em 
+substituição ao critério exclusivo de ordem de chegada, o que otimiza a alocação dos recursos da unidade e eleva os níveis de segurança do cuidado.
 
-## As 6 Linhas Fundamentais
+## Para quem?
+Profissionais Enfermeiros.
 
-- **O que é:** [PREENCHER: Definição em 1 frase direta — O que o sistema faz na prática]
-- **Para quem:** [PREENCHER: Quem são os usuários primários que utilizam a interface diariamente]
-- **Qual a dor:** [PREENCHER: Qual o problema concreto que motivou a criação do sistema]
-- **O que substitui:** [PREENCHER: O que as pessoas usam hoje — ex: planilhas Excel, e-mails soltos, sistema legado X]
-- **Dar certo é:** [PREENCHER: Métrica clara de sucesso — ex: reduzir o tempo de resposta de 2 dias para 4 horas]
-- **O que NÃO faz:** [PREENCHER: O limite imediato de escopo — ex: não emite notas fiscais nem processa pagamentos]
+## Qual o problema?
+Desorganização do fluxo de atendimento de urgência, riscos à segurança do paciente e falta de projeção clínica baseada em evidências.
 
----
+## Dar certo é:
+Reduzir o tempo de triagem mantendo a segurança clínica, com 100% dos pacientes classificados conforme protocolos (como o de Manchester) e redução de espera para casos graves.
 
-## Contraste Didático de Preenchimento
+## O que a Classificaçao de Risco Nunca é:
 
-### ❌ Exemplo Fraco (Vago e decorativo):
-> - **O que é:** Um sistema inovador e robusto de gestão de atendimento.
-> - **Para quem:** Para todos os colaboradores da empresa.
-> - **Qual a dor:** Melhorar a comunicação e a sinergia.
-> - **Dar certo é:** Deixar os clientes felizes e satisfeitos.
+- Não gerencia compras, estoques, inventários, folhas de pagamento e contas médicas.
+- Não realiza diagnóstico médico nem substitui a avaliação e a decisão clínica do profissional de saúde.
+- Não prescreve medicamentos nem define condutas terapêuticas.
+- Não substitui o atendimento médico ou de enfermagem.
+- Não gerencia a internação completa, altas, transferências ou regulação de leitos.
+- Não substitui protocolos institucionais: apoia sua aplicação na triagem, mas a decisão final continua sendo do profissional responsável.
+- Não atende pacientes diretamente nem funciona como canal de orientação clínica ao público.
+- Não elimina a necessidade de registro clínico e documentação adequada no prontuário.
 
-### ✅ Exemplo Bom (Concreto e factual — Domínio Neutro):
-> - **O que é:** Sistema web interno para registro, triagem e resolução de chamados técnicos de TI.
-> - **Para quem:** Atendentes de suporte N1 e analistas de infraestrutura N2.
-> - **Qual a dor:** Chamados solicitados por mensagem privada no Teams que se perdem sem registro de SLA.
-> - **O que substitui:** Uma planilha compartilhada do Google Sheets atualizada manualmente.
-> - **Dar certo é:** 100% dos chamados terem protocolo e 0 chamados ficarem mais de 24h sem primeira resposta.
-> - **O que NÃO faz:** Não gerencia inventário de patrimônio nem compra de novos equipamentos.
 
----
+## O que a Classificação de Rsico não faz: 
 
-<!--
-📋 CHECKLIST DE VALIDAÇÃO DESTE ARQUIVO:
-[ ] Tem entre 15 e 25 linhas?
-[ ] Possui métrica numérica na linha "Dar certo é"?
-[ ] Declara expressamente o que substitui e o que NÃO faz?
--->
+-Não realiza diagnóstico, prescrição ou definição de condutas médicas; 
+
+-Não substitui a avaliação dos profissionais de saúde nem os protocolos institucionais. 
+
+-Não gerencia faturamento, contas médicas, compras, estoques, folha de pagamento, internação ou regulação de leitos.
+
+## Restrições
+
+- Somente profissionais enfermeiros, autorizados no sistema, podem realizar a classificação de pacientes.
