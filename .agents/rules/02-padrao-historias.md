@@ -1,4 +1,5 @@
 ---
+trigger: always_on
 description: "Estrutura formal e obrigatória para redação de Histórias de Usuário e Critérios de Aceite."
 globs: "entregas/**"
 ---
@@ -16,13 +17,13 @@ Toda história de usuário deve conter obrigatoriamente as seguintes seções es
 ```markdown
 # [US-XX] [Título Conciso e Orientado a Ação]
 
-## 1. Narrativa da História
+## 1. Descrição
+- [Descrição sucinta do objetivo da história com todas as informações relevantes para o entendimento do leitor]
+
+## 2. Narrativa da História
 - **Como** [Nome da Persona formalizada em personas-usuario.md — nunca "o usuário"]
 - **Quero** [Ação funcional concreta que a persona executa no sistema]
 - **Para que** [Benefício ou resultado de negócio mensurável gerado pela ação]
-
-## 2. Regras de Negócio Aplicadas
-- Referência obrigatória às regras de `@contexto/regras-de-negocio.md` (Ex: `[RN-02]`, `[RN-05]`).
 
 ## 3. Critérios de Aceite (Testáveis)
 
@@ -48,10 +49,16 @@ Toda história de usuário deve conter obrigatoriamente as seguintes seções es
 - **Quando** [dispara a requisição/ação]
 - **Então** [o sistema oculta a ação ou exibe alerta de permissão negada]
 
-## 4. O que esta História NÃO cobre (Limites de Escopo)
+## 4. Regras de Negócio Aplicadas
+- [Referência obrigatória às regras de `@contexto/regras-de-negocio.md` (Ex: `[RN-02]`, `[RN-05]`).
+
+## 5. Outras Informações Relevantes
+- [Referência obrigatória às fontes de `@contexto/fontes` (Ex: `[IR-02]`, `[IR-05]`).
+
+## 6. O que esta História NÃO cobre (Limites de Escopo)
 - [Listagem explícita de comportamentos que ficam para histórias futuras ou outros épicos]
 
-## 5. Suposições e Dúvidas Abertas
+## 7. Suposições e Dúvidas Abertas
 - ⚠️ `[SUPOSIÇÃO]` [Se houver, listar aqui explicitamente]
 - `[CONFIRMAR]` [Itens pendentes de validação com stakeholders]
 ```
@@ -63,6 +70,7 @@ Toda história de usuário deve conter obrigatoriamente as seguintes seções es
 1. **Persona Específica:** Nunca escreva "Como usuário". Identifique a persona cadastrada (ex: "Como Atendente Nível 1").
 2. **Critérios Binários:** O critério deve permitir apenas duas conclusões: **PASSOU** ou **FALHOU**.
 3. **Sem Jargão Técnico:** Não utilize termos como `JSON`, `PostgreSQL`, `endpoint`, `state management` dentro dos critérios de aceite.
+4. **Regras BDD/Gherkig:** Todos os cenários dos Critérios de Aceitação devem seguir estritamente o princípio fundamental do BDD/Gherkin (**Dado que**: Contém exclusivamente o cenário, **Quando**: Contém exclusivamente a ação direta e voluntária do usuário, **Então**: Contém exclusivamente a resposta observável do sistema e **E**: Estende fielmente a mesma natureza da cláusula imediatamente anterior).
 
 ---
 
