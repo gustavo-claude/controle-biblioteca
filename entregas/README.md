@@ -1,42 +1,78 @@
 # Pasta `entregas/` — Artefatos Formais de Saída
 
 > 💡 **PAPEL DESTA PASTA:**  
-> Esta pasta armazena todos os documentos formais produzidos pelo PO em parceria com a IA: histórias de usuário revisadas, especificações funcionais, relatórios de fatiamento de épicos e matrizes de priorização prontas para o time de desenvolvimento.
-
----
-
-## 1. Padrão Obrigatório de Nomenclatura
-
-Todo arquivo salvo nesta pasta deve seguir a regra de nomenclatura com data ISO e prefixo claro:
+> Aqui ficam os artefatos produzidos durante o projeto. Cada tipo tem a própria subpasta, no mesmo desenho de `exemplos/`: funcionalidades, wireframes e especificações. Os pares bom/ruim em `exemplos/` calibram a redação; os arquivos desta pasta são o trabalho real do projeto.
 
 ```
 entregas/
-├── AAAA-MM-DD-[TIPO]-[ID]-[assunto].md
-├── 2026-08-31-US-01-abertura-chamado-anexo.md
-├── 2026-08-31-EPICO-01-triagem-e-notificacoes.md
-└── 2026-09-05-MATRIZ-priorizacao-sprint-12.md
+├── funcionalidades/    <- Lista de funcionalidades do sistema a ser criado
+├── wireframes/         <- Estruturas visuais do fluxo de uso
+└── especificacoes/     <- Especificações funcionais para a equipe de desenvolvimento
 ```
 
 ---
 
-## 2. Ciclo de Vida de uma Entrega
+## 1. O que vai em cada subpasta
+
+### `funcionalidades/`
+
+Lista de funcionalidades do sistema a ser criado. Cada arquivo registra o que o sistema faz, o problema que resolve e o benefício para quem usa.
+
+Ao redigir ou revisar, siga `@exemplos/funcionalidades/funcionalidades-bom.md` e evite os vícios de `@exemplos/funcionalidades/funcionalidades-ruim.md`.
+
+### `wireframes/`
+
+Estruturas visuais de baixa complexidade que ajudam os usuários a compreender como será o fluxo de uso do sistema. Use esta pasta para o desenho da jornada antes de detalhar a especificação.
+
+### `especificacoes/`
+
+Documentos de especificação funcional apresentados à equipe de desenvolvimento. Contêm histórias de usuário, critérios de aceitação e as demais informações necessárias para o refinamento.
+
+Ao redigir ou revisar, siga `@exemplos/especificacoes/especifcacao-boa.md` e evite os vícios de `@exemplos/especificacoes/especificacao-ruim.md`.
+
+---
+
+## 2. Padrão obrigatório de nomenclatura
+
+Todo arquivo salvo em uma subpasta leva a data ISO e um assunto curto, em kebab-case:
 
 ```
-[Rascunho no Chat] 
+entregas/funcionalidades/AAAA-MM-DD-assunto.md
+entregas/wireframes/AAAA-MM-DD-assunto.md
+entregas/especificacoes/AAAA-MM-DD-assunto.md
+```
+
+Exemplos:
+
+```
+entregas/funcionalidades/2026-09-30-lista-funcionalidades.md
+entregas/wireframes/2026-09-30-fluxo-abertura-chamado.md
+entregas/especificacoes/2026-09-30-US-01-abertura-chamado.md
+```
+
+Se já existir um arquivo com a mesma data e o mesmo assunto, acrescente um sufixo curto ao nome. Não grave artefatos na raiz de `entregas/` nem em `contexto/`.
+
+---
+
+## 3. Ciclo de vida de uma entrega
+
+```
+[Rascunho no Chat]
        │
-       ▼ (Skill: escrever-historia)
-[Geração da História]
+       ▼ (Skills e personas do fluxo)
+[Geração do artefato]
        │
-       ▼ (Skill: revisar-criticamente / Persona @critico)
-[Auditoria e Correções das 7 Lentes]
+       ▼ (Revisão, quando o tipo exigir)
+[Auditoria e correções]
        │
        ▼ (Aprovação do PO)
-[Arquivo Final Gravado em entregas/ com data e ID]
+[Arquivo final na subpasta correspondente, com data e assunto]
 ```
 
 ---
 
-## 3. Regras de Manutenção
+## 4. Regras de manutenção
 
-- Nunca edite uma entrega formal sem registrar a data da alteração ou gerar uma nova versão revisada;
-- Arquivos desta pasta são os insumos diretos para o refinamento técnico da equipe de engenharia.
+- Grave cada artefato na subpasta do seu tipo: lista em `funcionalidades/`, fluxo visual em `wireframes/`, especificação em `especificacoes/`.
+- Nunca edite uma entrega formal sem registrar a data da alteração ou gerar uma nova versão revisada.
+- Arquivos desta pasta são os insumos diretos para o refinamento com a equipe de desenvolvimento.
