@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1040" width="1200" height="1040">
+  <rect width="1200" height="1040" fill="#ffffff"/>
+  <text x="600" y="28" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">F004 - Iniciar triagem do paciente aguardando classificação</text>
+  <text x="24" y="58" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111">Passo 1. Localizar o paciente em Aguardando Classificação e clicar em Classificar</text>
+
+  <rect x="24" y="72" width="1152" height="680" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+
+  <rect x="48" y="96" width="280" height="36" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+  <text x="188" y="119" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#111111" text-anchor="middle">Aguardando Classificação</text>
+  <rect x="336" y="96" width="170" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="421" y="119" font-family="Segoe UI, sans-serif" font-size="14" fill="#111111" text-anchor="middle">Classificados</text>
+
+  <rect x="48" y="156" width="1104" height="470" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="12"/>
+
+  <text x="72" y="192" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111">Tempo de espera</text>
+  <text x="250" y="192" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111">Nome</text>
+  <text x="560" y="192" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111">Situações</text>
+  <line x1="64" y1="204" x2="1136" y2="204" stroke="#111111" stroke-width="1.5"/>
+
+  <!-- Linha 1: Maria Costa * (Classificar Destacado em #dbeafe) -->
+  <text x="72" y="244" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">18 min</text>
+  <text x="250" y="244" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">Maria Costa *</text>
+  <rect x="560" y="224" width="36" height="28" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="6"/>
+  <text x="578" y="243" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111" text-anchor="middle">P</text>
+  <rect x="604" y="224" width="52" height="28" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="6"/>
+  <text x="630" y="243" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111" text-anchor="middle">EDM</text>
+  <rect x="900" y="222" width="90" height="32" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="945" y="243" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111" text-anchor="middle">Chamar</text>
+  <rect x="1000" y="216" width="110" height="44" fill="#dbeafe" stroke="#111111" stroke-width="2.5" rx="8"/>
+  <text x="1055" y="243" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111" text-anchor="middle">Classificar</text>
+
+  <!-- Linha 2: José Alves -->
+  <text x="72" y="304" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">40 min</text>
+  <text x="250" y="304" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">José Alves</text>
+  <rect x="900" y="282" width="90" height="32" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="945" y="303" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111" text-anchor="middle">Chamar</text>
+  <rect x="1000" y="282" width="110" height="32" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="1055" y="303" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111" text-anchor="middle">Classificar</text>
+
+  <!-- Linha 3: Ana Ribeiro -->
+  <text x="72" y="364" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">12 min</text>
+  <text x="250" y="364" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">Ana Ribeiro</text>
+  <rect x="560" y="344" width="36" height="28" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="6"/>
+  <text x="578" y="363" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111" text-anchor="middle">P</text>
+  <rect x="900" y="342" width="90" height="32" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="945" y="363" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111" text-anchor="middle">Chamar</text>
+  <rect x="1000" y="342" width="110" height="32" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="1055" y="363" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111" text-anchor="middle">Classificar</text>
+
+  <!-- Linha 4: Pedro Lima * -->
+  <text x="72" y="424" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">25 min</text>
+  <text x="250" y="424" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">Pedro Lima *</text>
+  <rect x="560" y="404" width="52" height="28" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="6"/>
+  <text x="586" y="423" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111" text-anchor="middle">EDM</text>
+  <rect x="900" y="402" width="90" height="32" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="945" y="423" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111" text-anchor="middle">Chamar</text>
+  <rect x="1000" y="402" width="110" height="32" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="1055" y="423" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111" text-anchor="middle">Classificar</text>
+
+  <!-- Linha 5: Lúcia Ferreira -->
+  <text x="72" y="484" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">7 min</text>
+  <text x="250" y="484" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">Lúcia Ferreira</text>
+  <rect x="900" y="462" width="90" height="32" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="945" y="483" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111" text-anchor="middle">Chamar</text>
+  <rect x="1000" y="462" width="110" height="32" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="1055" y="483" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111" text-anchor="middle">Classificar</text>
+
+  <!-- Rodape Padronizado da Fila (Sem o botao Voltar, centralizado) -->
+  <rect x="378" y="672" width="180" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="468" y="697" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111" text-anchor="middle">Atualiza Fila</text>
+  <rect x="582" y="672" width="240" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="702" y="697" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111" text-anchor="middle">Relatório Classificados</text>
+
+  <!-- Seta Frame A -> Frame B -->
+  <line x1="600" y1="764" x2="600" y2="848" stroke="#111111" stroke-width="2"/>
+  <polygon points="592,840 608,840 600,856" fill="#111111"/>
+  <text x="616" y="800" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111">Clicar em Classificar abre a página de triagem.</text>
+  <text x="616" y="820" font-family="Segoe UI, sans-serif" font-size="13" fill="#111111">O paciente fica em Em Triagem.</text>
+
+  <!-- Frame B: Referencia -->
+  <text x="24" y="882" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#111111">Passo 2. Abrir página de triagem de classificação de risco</text>
+  <rect x="24" y="896" width="1152" height="120" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+  <text x="600" y="962" font-family="Segoe UI, sans-serif" font-size="16" fill="#111111" text-anchor="middle">Página de registro de informações da classificação</text>
+</svg>
