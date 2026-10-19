@@ -16,7 +16,7 @@ entregas/
 
 ### `funcionalidades/`
 
-Lista de funcionalidades do sistema a ser criado. Cada arquivo registra o que o sistema faz, o problema que resolve e o benefício para quem usa.
+Lista de funcionalidades do sistema a ser criado. Cada arquivo registra o que o sistema faz, o problema que resolve e o benefício para quem usa. O identificador de cada item tem dois algarismos: `F01`, `F02`, até `F99`. Não use `F001`.
 
 Ao redigir ou revisar, siga `@exemplos/funcionalidades/funcionalidades-bom.md` e evite os vícios de `@exemplos/funcionalidades/funcionalidades-ruim.md`.
 
@@ -26,9 +26,11 @@ Estruturas visuais de baixa complexidade que ajudam os usuários a compreender c
 
 ### `especificacoes/`
 
-Documentos de especificação funcional apresentados à equipe de desenvolvimento. Contêm histórias de usuário, critérios de aceitação e as demais informações necessárias para o refinamento.
+Documentos de especificação funcional apresentados à equipe de desenvolvimento. Cada arquivo cobre uma funcionalidade da lista mais recente em `entregas/funcionalidades/`. O identificador é `HU-XX`, com os mesmos dois algarismos da funcionalidade: `F01` gera `HU-01`. Não use `HU-001` nem `US-XX`.
 
-Ao redigir ou revisar, siga `@exemplos/especificacoes/especifcacao-boa.md` e evite os vícios de `@exemplos/especificacoes/especificacao-ruim.md`.
+A skill `elaborar-especificacao` confirma com o operador qual funcionalidade documentar antes de gravar. O documento se chama `HU-01`. Cenários, regras locais e anexos colam o número: `HU01-C01`, `HU01-R01`, `HU01-I01`.
+
+Ao redigir ou revisar, siga `@exemplos/especificacoes/especifcacao-boa.md` e evite os vícios de `@exemplos/especificacoes/especificacao-ruim.md`. O formato da lista de origem está em `@exemplos/funcionalidades/funcionalidades-bom.md`.
 
 ---
 
@@ -47,7 +49,7 @@ Exemplos:
 ```
 entregas/funcionalidades/2026-09-30-lista-funcionalidades.md
 entregas/wireframes/2026-09-30-fluxo-abertura-chamado.md
-entregas/especificacoes/2026-09-30-US-01-abertura-chamado.md
+entregas/especificacoes/2026-09-30-HU-01-abertura-chamado.md
 ```
 
 Se já existir um arquivo com a mesma data e o mesmo assunto, acrescente um sufixo curto ao nome. Não grave artefatos na raiz de `entregas/` nem em `contexto/`.

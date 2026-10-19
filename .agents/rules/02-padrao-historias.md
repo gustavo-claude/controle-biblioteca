@@ -15,7 +15,7 @@ globs: "entregas/**"
 Toda história de usuário deve conter obrigatoriamente as seguintes seções estruturadas:
 
 ```markdown
-# [US-XX] [Título Conciso e Orientado a Ação]
+# [HU-XX] [Título Conciso e Orientado a Ação]
 
 ## 1. Descrição
 - [Descrição sucinta do objetivo da história com todas as informações relevantes para o entendimento do leitor]

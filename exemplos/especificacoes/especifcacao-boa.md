@@ -1,263 +1,312 @@
-> 🌟 **EXEMPLO PADRÃO OURO:**  
-> Use este arquivo como modelo de referência para o nível de detalhe, estrutura e precisão esperados de uma história de usuário neste workspace.
+> 🌟 **EXEMPLO PADRÃO OURO:**
+> Forma de uma especificação funcional. No trabalho real, o número vem da funcionalidade confirmada na lista mais recente de `entregas/funcionalidades/`, com dois algarismos: `F02` gera o documento `HU-02`. Critério, regra e informação colam o número: `HU02-C01`, `HU02-R03`, `HU02-I01`. Não use `HU-02-C01`, `HU-002` nem `US-XX`.
 
----
+# HU-02 Detalhar atendimento
 
-## **HU002 – Detalhes do Atendimento**
+> Prevalece, nesta ordem: cenário, regra, anexo ilustrativo. A lista de atualizações não altera o corpo.
 
-### **1. DESCRIÇÃO**
-Essa História serve para dar às contas médicas, acesso rápido às informações detalhadas de um atendimento (dados do paciente, lista de AIH’s, opções de criação de novas AIH’s e geração de arquivo de exportação de informações daquele paciente).
+## 1. Descrição
 
-# LISTA DE ATUALIZAÇÕES
+Contas Médicas consulta um atendimento e vê a identificação do paciente, as AIHs vinculadas e as ações daquele atendimento: prontuário, impressão, nova AIH, exclusão e exportação.
 
-| Autor               | Data       | Descrição                                                                                                                                                                                                 |
-|---------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Angela Maria Amador | --------   | ------------                                                                                                                                                                                               |
+## 2. Narrativa da História
 
+- **Como** Contas Médicas
+- **Quero** visualizar os detalhes de um atendimento
+- **Para que** eu consulte as informações do paciente e registre as alterações da produção hospitalar daquele atendimento
 
+## 3. Critérios de Aceite
 
+### Contexto compartilhado
 
+Aplica-se a HU02-C05, HU02-C06, HU02-C07, HU02-C08, HU02-C09, HU02-C10, HU02-C11, HU02-C12, HU02-C16, HU02-C17, HU02-C18, HU02-C19, HU02-C20 e HU02-C22.
 
-### **2. HISTÓRIA DE USUÁRIO**
-**COMO** Contas Médicas  
-**DEVO** visualizar detalhes de um atendimento  
-**PARA** ter acesso às informações do paciente e fazer as modificações necessárias em relação à produção hospitalar.  
+- **Dado que** Contas Médicas está na tela "Detalhes do Atendimento"
 
----
+### HU02-C01: [caminho-feliz] — Detalhes a partir de Altas Hospitalares
 
-### **3. CRITÉRIOS DE ACEITAÇÃO**
+- **Dado que** Contas Médicas está na lista "Altas Hospitalares" com atendimentos cadastrados
+- **Quando** Contas Médicas aciona "Detalhes do Atendimento" de um paciente
+- **Então** o sistema exibe a identificação do paciente e a lista de AIHs vinculadas `HU02-R01`
+- **E** apresenta, em cada AIH, o número, a data inicial e a data final
+- **E** disponibiliza "Imprimir", "Editar" e "Excluir" em cada AIH `HU02-R02`
+- **E** disponibiliza "Ver Prontuário", "Criar Nova AIH", "Voltar" e "Exportar para Autorizador"
 
-Cada critério funcional abaixo é estruturado segundo a sequência canônica: **Caminho Feliz**, **Caminhos de Validação e Erro** e **Estado Vazio (Empty State)**, aplicando estritamente a regra BDD/Gherkin:
-- **Dado que**: Define o cenário, contexto, estado prévio ou pré-condição do sistema.
-- **Quando**: Define a ação voluntária e direta disparada pelo usuário.
-- **Então**: Define a ação, resposta observável ou comportamento executado pelo sistema.
+### HU02-C02: [caminho-feliz] — Detalhes a partir de Em Atendimento
 
----
+- **Dado que** Contas Médicas está na lista "Em Atendimento" com pacientes listados
+- **Quando** Contas Médicas aciona "Detalhes do Atendimento" de um paciente
+- **Então** o sistema exibe a identificação do paciente e a lista de AIHs vinculadas `HU02-R01`
+- **E** apresenta, em cada AIH, o número, o procedimento, a data e hora iniciais e a data e hora finais
+- **E** disponibiliza "Imprimir" em cada AIH `HU02-R02`
+- **E** disponibiliza "Ver Prontuário" e "Voltar"
 
-#### **3.1. CA001: Visualizar Detalhes do Atendimento e Lista de AIHs**
-
-##### **CA001.1: [Caminho Feliz] — Visualização a partir da aba "Altas Hospitalares"**
-- **Dado que** estou na lista de atendimentos encerrados ("Altas Hospitalares") com atendimentos cadastrados  
-- **Quando** aciono a opção “Detalhes do Atendimento” de um determinado paciente  
-- **Então** o sistema exibe a página de detalhes do atendimento com a identificação do paciente e a lista de AIHs vinculadas (IN001)  
-- **E** o sistema apresenta para cada AIH listada os campos: Nº da AIH, Data Inicial e Data Final (RN001)  
-- **E** o sistema disponibiliza as opções de Imprimir, Editar e Excluir para cada item da listagem (RN002)  
-- **E** o sistema disponibiliza os botões de ação: "Ver Prontuário", "Criar Nova AIH", "Voltar" e "Exportar para Autorizador" (RN003, RN004, RN005, RN006)  
-
-##### **CA001.2: [Caminho Feliz] — Visualização a partir da aba "Em Atendimento"**
-- **Dado que** estou na lista de pacientes "Em Atendimento" com pacientes listados  
-- **Quando** aciono a opção “Detalhes do Atendimento” de um determinado paciente  
-- **Então** o sistema exibe a página de detalhes do atendimento com a identificação do paciente e a lista de AIHs vinculadas (IN001)  
-- **E** o sistema apresenta para cada AIH listada os campos: Nº da AIH, Procedimento, Data/Hora Inicial e Data/Hora Final (RN001)  
-- **E** o sistema disponibiliza a opção de Imprimir para cada item da listagem (RN002)  
-- **E** o sistema disponibiliza os botões de ação: "Ver Prontuário" e "Voltar" (RN004, RN005)  
-
-##### **CA001.3: [Caminhos de Validação e Erro] — Falha de comunicação no carregamento dos registros**
-- **Dado que** o serviço de banco de dados ou a rede está indisponível na listagem de atendimentos  
-- **Quando** aciono a opção “Detalhes do Atendimento” de um determinado paciente  
-- **Então** o sistema exibe um alerta orientativo: “Não foi possível carregar os detalhes do atendimento. Tente novamente em instantes.”  
-- **E** o sistema mantém visível a opção de retorno à listagem anterior através do botão "Voltar"  
-- **E** o sistema registra a falha de comunicação no log de auditoria técnica (RN007)  
-
-##### **CA001.4: [Estado Vazio] — Atendimento sem AIHs cadastradas (Empty State)**
-- **Dado que** estou na lista de atendimentos e o paciente selecionado não possui nenhuma AIH vinculada ou cadastrada  
-- **Quando** aciono a opção “Detalhes do Atendimento” desse paciente  
-- **Então** o sistema exibe normalmente o bloco com os dados de identificação do paciente (RN001)  
-- **E** o sistema exibe na área de listagem de AIHs a mensagem orientativa: “Nenhuma AIH vinculada a este atendimento até o momento.”  
-- **E** o sistema disponibiliza em destaque o botão “Criar Nova AIH” habilitado para início do faturamento (RN003)  
-
----
-
-#### **3.2. CA002: Consultar Prontuário do Paciente e Navegação de Retorno**
-
-##### **CA002.1: [Caminho Feliz] — Consulta ao Prontuário Eletrônico Simplificado**
-- **Dado que** estou na tela de “Detalhes do Atendimento” com o botão "Ver Prontuário" disponível  
-- **Quando** aciono a opção “Ver Prontuário”  
-- **Então** o sistema exibe o prontuário eletrônico simplificado do paciente com os dados clínicos e registros de internação (IN003, RN004)  
-- **E** o sistema disponibiliza o botão "Voltar" para retorno à tela de detalhes do atendimento sem perda de contexto (RN005)  
-
-##### **CA002.2: [Caminho Feliz] — Retorno à lista de origem sem perda de contexto**
-- **Dado que** estou na tela de “Detalhes do Atendimento” tendo navegado a partir de uma lista de origem ("Altas Hospitalares" ou "Em Atendimento")  
-- **Quando** aciono o botão “Voltar”  
-- **Então** o sistema redireciona a navegação para a respectiva lista de origem (RN005)  
-- **E** o sistema preserva os filtros, paginação e contexto da pesquisa anteriormente efetuada (RN005)  
-
-##### **CA002.3: [Caminhos de Validação e Erro] — Indisponibilidade do serviço de prontuário**
-- **Dado que** estou na tela de “Detalhes do Atendimento” e o serviço de prontuário eletrônico encontra-se temporariamente indisponível  
-- **Quando** aciono a opção “Ver Prontuário”  
-- **Então** o sistema exibe a mensagem de alerta: “Serviço de prontuário temporariamente indisponível. Tente novamente em instantes.”  
-- **E** o sistema mantém a navegação na tela de “Detalhes do Atendimento”  
-- **E** o sistema registra a falha de comunicação no log de eventos (RN007)  
-
-##### **CA002.4: [Estado Vazio] — Prontuário sem anotações clínicas prévias**
-- **Dado que** estou na tela de “Detalhes do Atendimento” de um paciente que não possui anotações clínicas prévias registradas  
-- **Quando** aciono a opção “Ver Prontuário”  
-- **Então** o sistema exibe os dados cadastrais do paciente (IN003)  
-- **E** o sistema exibe na área de registros clínicos a mensagem orientativa de estado vazio: “Nenhum registro clínico vinculado até o momento.”  
-
----
-
-#### **3.3. CA003: Imprimir AIH em Formato PDF**
-
-##### **CA003.1: [Caminho Feliz] — Geração de PDF conforme padrão do Ministério da Saúde**
-- **Dado que** estou na tela de “Detalhes do Atendimento” visualizando uma AIH válida na listagem  
-- **Quando** aciono a opção “Imprimir” da AIH selecionada  
-- **Então** o sistema gera o documento em formato PDF com os padrões e dados obrigatórios definidos pelo Ministério da Saúde (IN002, RN008)  
-- **E** o sistema registra em log o usuário autenticado, data/hora e a ação de impressão efetuada (RN007)  
-- **E** o sistema mantém a tela de “Detalhes do Atendimento” aberta com a listagem de AIHs preservada  
-
-##### **CA003.2: [Caminhos de Validação e Erro] — Indisponibilidade do serviço gerador de documentos**
-- **Dado que** estou na tela de “Detalhes do Atendimento” e o serviço de geração de relatórios PDF está indisponível  
-- **Quando** aciono a opção “Imprimir” de uma das AIHs da lista  
-- **Então** o sistema exibe a mensagem de erro orientativa: “Não foi possível gerar a impressão da AIH. Contate o suporte ou tente novamente mais tarde.”  
-- **E** o sistema grava os detalhes técnicos da ocorrência no log de erros (RN007)  
-
-##### **CA003.3: [Estado Vazio] — Ausência de AIHs para impressão**
-- **Dado que** estou na tela de “Detalhes do Atendimento” de um atendimento que não possui nenhuma AIH cadastrada  
-- **Quando** visualizo a seção de AIHs do atendimento  
-- **Então** o sistema não exibe botões nem opções para impressão de AIH na tela  
-- **E** o sistema exibe a mensagem informando a ausência de registros disponíveis para impressão  
-
----
-
-#### **3.4. CA004: Excluir AIH com Confirmação e Justificativa Obrigatória**
-
-##### **CA004.1: [Caminho Feliz] — Abertura do modal de confirmação de exclusão**
-- **Dado que** estou na tela de “Detalhes do Atendimento” com perfil autorizado ("Contas Médicas" ou "Administrador") visualizando a lista de AIHs (RN009)  
-- **Quando** aciono a opção "Excluir" em uma das AIHs listadas (RN002)  
-- **Então** o sistema exibe o modal de confirmação com a mensagem: “Você deseja realmente excluir a AIH Nº [número da AIH] associada ao procedimento [nome do procedimento]?” (RN0012)  
-- **E** o sistema apresenta um campo de texto obrigatório para que o usuário informe o motivo da exclusão (RN0010)  
-- **E** o sistema disponibiliza os botões "Confirmar Exclusão" e "Cancelar"  
-
-##### **CA004.2: [Caminho Feliz] — Confirmação da exclusão com registro de motivo**
-- **Dado que** estou com o modal de confirmação de exclusão de AIH aberto na tela (RN0012)  
-- **Quando** preencho o campo de motivo e aciono o botão "Confirmar Exclusão" (RN0010)  
-- **Então** o sistema realiza a exclusão lógica da AIH selecionada (RN0011)  
-- **E** o sistema registra em log o usuário autenticado, data/hora da exclusão e o motivo informado (RN007, RN0011)  
-- **E** o sistema fecha o modal e exibe na listagem a mensagem de sucesso: “AIH excluída com sucesso. Motivo registrado: [motivo informado].”  
-
-##### **CA004.3: [Caminhos de Validação e Erro] — Confirmação de exclusão com motivo não preenchido**
-- **Dado que** estou com o modal de confirmação de exclusão de AIH aberto e o campo de motivo está em branco  
-- **Quando** aciono o botão "Confirmar Exclusão"  
-- **Então** o sistema bloqueia a confirmação e mantém o modal de exclusão aberto  
-- **E** o sistema exibe a mensagem de validação destacada: “O preenchimento do motivo da exclusão é obrigatório.” (RN0010)  
-- **E** o sistema não efetua a exclusão lógica nem grava registro de baixa em log  
-
-##### **CA004.4: [Estado Vazio] — Exclusão da única AIH vinculada ao atendimento**
-- **Dado que** estou com o modal de confirmação aberto para exclusão da única AIH existente do atendimento (RN009, RN0012)  
-- **Quando** preencho o campo de motivo e aciono o botão "Confirmar Exclusão" (RN0010)  
-- **Então** o sistema realiza a exclusão lógica da AIH (RN0011)  
-- **E** o sistema atualiza a tabela de AIHs exibindo a mensagem orientativa de estado vazio: “Nenhuma AIH vinculada a este atendimento até o momento.”  
-- **E** o sistema disponibiliza em destaque o botão “Criar Nova AIH” habilitado (RN003)  
+### HU02-C03: [erro] — Falha ao carregar os detalhes
 
----
+- **Dado que** a comunicação está indisponível na listagem de atendimentos
+- **Quando** Contas Médicas aciona "Detalhes do Atendimento" de um paciente
+- **Então** o sistema exibe o alerta: "Não foi possível carregar os detalhes do atendimento. Tente novamente em instantes."
+- **E** mantém visível o botão "Voltar"
+- **E** registra a tentativa malsucedida, com data e hora e a identificação de quem acionou `HU02-R07`
 
-#### **3.5. CA005: Exportar Dados do Atendimento para o Autorizador da SESMA**
+### HU02-C04: [estado-vazio] — Atendimento sem AIH
 
-##### **CA005.1: [Caminho Feliz] — Geração e transmissão de arquivo com sucesso**
-- **Dado que** estou na tela de “Detalhes do Atendimento” de um paciente com atendimento encerrado e AIH vinculada  
-- **Quando** aciono a opção “Exportar para Autorizador”  
-- **Então** o sistema gera o arquivo de integração conforme o layout do Anexo IV e o transmite ao sistema Autorizador da SESMA (RN006)  
-- **E** o sistema registra em log o usuário autenticado, data/hora e o status de sucesso da exportação (RN006, RN007)  
-- **E** o sistema exibe a mensagem de confirmação: “Dados do atendimento exportados com sucesso para o Autorizador da SESMA.”  
+- **Dado que** Contas Médicas está na lista de atendimentos e o paciente selecionado não tem AIH vinculada
+- **Quando** Contas Médicas aciona "Detalhes do Atendimento" desse paciente
+- **Então** o sistema exibe a identificação do paciente `HU02-R01`
+- **E** exibe na área de AIHs: "Nenhuma AIH vinculada a este atendimento até o momento."
+- **E** disponibiliza "Criar Nova AIH" habilitado
 
-##### **CA005.2: [Caminhos de Validação e Erro] — Indisponibilidade do Autorizador da SESMA**
-- **Dado que** estou na tela de “Detalhes do Atendimento” e o serviço externo do Autorizador da SESMA encontra-se indisponível ou inacessível  
-- **Quando** aciono a opção “Exportar para Autorizador”  
-- **Então** o sistema exibe a mensagem de erro orientativa: “Não foi possível comunicar com o Autorizador da SESMA no momento. Verifique a conexão e tente novamente mais tarde.”  
-- **E** o sistema registra no log de erros a tentativa com data/hora, identificação do usuário e status da falha (RN006, RN007)  
-- **E** o sistema mantém os dados do atendimento em tela inalterados sem travar a navegação  
+### HU02-C05: [caminho-feliz] — Consultar prontuário
 
-##### **CA005.3: [Estado Vazio] — Atendimento sem AIH para exportação**
-- **Dado que** estou na tela de “Detalhes do Atendimento” de um paciente que não possui nenhuma AIH vinculada  
-- **Quando** visualizo as opções de exportação na tela  
-- **Então** o sistema apresenta a opção "Exportar para Autorizador" desabilitada  
-- **E** o sistema exibe tooltip orientativo ao posicionar o cursor: “Adicione ao menos uma AIH para habilitar a exportação.”  
+- **Dado que** o botão "Ver Prontuário" está disponível
+- **Quando** Contas Médicas aciona "Ver Prontuário"
+- **Então** o sistema exibe o prontuário do paciente com os dados clínicos e os registros de internação `HU02-R04`
+- **E** disponibiliza "Voltar" para a tela de detalhes do atendimento
 
----
+### HU02-C06: [caminho-feliz] — Voltar à lista de origem
 
-#### **3.6. CA006: Controle de Acesso e Permissões de Ação**
+- **Dado que** Contas Médicas chegou a "Detalhes do Atendimento" a partir de "Altas Hospitalares" ou de "Em Atendimento"
+- **Quando** Contas Médicas aciona "Voltar"
+- **Então** o sistema retorna à lista de origem `HU02-R05`
+- **E** preserva os filtros, a paginação e a pesquisa dessa lista
 
-##### **CA006.1: [Caminho Feliz / Perfil Autorizado] — Disponibilidade de ações restritas para perfis autorizados**
-- **Dado que** estou autenticado no sistema com perfil autorizado ("Contas Médicas" ou "Administrador") (RN009)  
-- **Quando** visualizo a lista de AIHs na tela de “Detalhes do Atendimento”  
-- **Então** o sistema disponibiliza habilitadas as opções de “Editar” e “Excluir” em cada item da listagem (RN002, RN009)  
-- **E** o sistema disponibiliza habilitadas as opções “Criar Nova AIH” e “Exportar para Autorizador” (RN003, RN006)  
+### HU02-C07: [erro] — Prontuário indisponível
 
-##### **CA006.2: [Caminhos de Validação e Erro / Perfil Não Autorizado] — Ocultação de ações restritas**
-- **Dado que** estou autenticado no sistema com perfil de consulta ou recepção, sem permissão para faturamento (RN009)  
-- **Quando** visualizo a tela de “Detalhes do Atendimento”  
-- **Então** o sistema oculta os botões “Editar”, “Excluir” e “Criar Nova AIH” (RN002, RN009)  
-- **E** o sistema mantém visíveis apenas as ações de consulta e navegação (“Ver Prontuário”, “Imprimir” e “Voltar”)  
+- **Dado que** o prontuário está temporariamente indisponível
+- **Quando** Contas Médicas aciona "Ver Prontuário"
+- **Então** o sistema exibe: "Serviço de prontuário temporariamente indisponível. Tente novamente em instantes."
+- **E** permanece em "Detalhes do Atendimento"
+- **E** registra a tentativa malsucedida, com data e hora e a identificação de quem acionou `HU02-R07`
 
-##### **CA006.3: [Caminhos de Validação e Erro / Bloqueio] — Tentativa de disparo de ação restrita por perfil não autorizado**
-- **Dado que** estou autenticado no sistema com perfil sem permissão para exclusão de AIHs (RN009)  
-- **Quando** tento disparar o comando de exclusão de uma AIH por atalho de teclado ou requisição direta  
-- **Então** o sistema bloqueia a execução da operação  
-- **E** o sistema exibe a mensagem de alerta: “Você não possui permissão para executar esta ação.”  
-- **E** o sistema registra a tentativa de acesso não autorizado no log de auditoria (RN007)  
+### HU02-C08: [estado-vazio] — Prontuário sem anotação clínica
 
-##### **CA006.4: [Estado Vazio] — Perfil autorizado em tela sem AIHs**
-- **Dado que** estou autenticado com perfil autorizado ("Contas Médicas" ou "Administrador") e a lista de AIHs do paciente está vazia  
-- **Quando** visualizo a tela de “Detalhes do Atendimento”  
-- **Então** o sistema exibe em destaque o botão “Criar Nova AIH” habilitado (RN003)  
-- **E** o sistema não apresenta ações individuais de “Editar” ou “Excluir” por inexistência de registros na tabela  
+- **Dado que** o paciente não tem anotação clínica prévia
+- **Quando** Contas Médicas aciona "Ver Prontuário"
+- **Então** o sistema exibe os dados cadastrais do paciente
+- **E** exibe na área de registros clínicos: "Nenhum registro clínico vinculado até o momento."
 
----
+### HU02-C09: [caminho-feliz] — Imprimir AIH
 
-### **4. REGRAS DE NEGÓCIO**
+- **Dado que** a listagem tem uma AIH válida
+- **Quando** Contas Médicas aciona "Imprimir" dessa AIH
+- **Então** o sistema gera o documento no padrão do Ministério da Saúde para AIH `HU02-R08`
+- **E** registra quem imprimiu, a data e a hora e a ação de impressão `HU02-R07`
+- **E** mantém "Detalhes do Atendimento" aberto, com a listagem preservada
 
-#### **RN001 - Exibição de dados**
-O sistema deve exibir, na tela de detalhamento, os dados de identificação do paciente e a lista de AIHs vinculadas ao atendimento. Cada AIH exibida deve conter obrigatoriamente: Nº da AIH, Procedimento vinculado àquela AIH, Data Inicial e Data Final.  
+### HU02-C10: [erro] — Impressão indisponível
 
-#### **RN002 - Ações disponíveis**
-Para cada AIH listada, o sistema deve disponibilizar as opções: Imprimir, Editar e Excluir. As ações devem respeitar as permissões de perfil do usuário.  
+- **Dado que** a geração do documento está indisponível
+- **Quando** Contas Médicas aciona "Imprimir" de uma AIH da lista
+- **Então** o sistema exibe: "Não foi possível gerar a impressão da AIH. Contate o suporte ou tente novamente mais tarde."
+- **E** não entrega o documento
+- **E** registra a tentativa malsucedida, com data e hora e a identificação de quem acionou `HU02-R07`
 
-#### **RN003 - Criação de nova AIH**
-Sempre que em uma internação forem realizados procedimentos além do gerador da AIH inicial, o sistema deve disponibilizar a opção para criação de nova AIH.  
+### HU02-C11: [estado-vazio] — Nenhuma AIH para imprimir
 
-#### **RN004 - Consulta ao prontuário**
-O sistema deve disponibilizar, na tela de detalhamento, opção para consulta ao Prontuário do Paciente.  
+- **Dado que** o atendimento não tem AIH cadastrada
+- **Quando** Contas Médicas visualiza a seção de AIHs
+- **Então** o sistema não exibe "Imprimir"
+- **E** exibe `[CONFIRMAR: texto da mensagem de ausência de AIH para impressão]`
 
-#### **RN005 - Navegação sem perda de contexto**
-O sistema deve permitir ao usuário navegação com possibilidade de retorno à lista de atendimentos encerrados sem perda de contexto.  
+### HU02-C12: [caminho-feliz] — Abrir a confirmação de exclusão
 
-#### **RN006 - Exportação de arquivo**
-O sistema deve disponibilizar a opção de exportação de arquivo para o sistema Autorizador da SESMA, para envio dos dados do atendimento conforme layout definido (Anexo IV), com registro. Após exportação, deve registrar em log usuário, data/hora e status da operação.  
+- **Dado que** o perfil é "Contas Médicas" ou "Administrador"
+- **E** a lista tem ao menos uma AIH
+- **Quando** Contas Médicas aciona "Excluir" em uma AIH
+- **Então** o sistema exibe: "Você deseja realmente excluir a AIH Nº [número da AIH] associada ao procedimento [nome do procedimento]?" `HU02-R12`
+- **E** apresenta um campo obrigatório para o motivo `HU02-R10`
+- **E** disponibiliza "Confirmar Exclusão" e "Cancelar"
 
-#### **RN007 - Registro em log**
-Todas as ações realizadas na tela de detalhamento (visualização, impressão, edição, exclusão, criação de nova AIH, exportação) devem ser registradas em log.  
+### HU02-C13: [caminho-feliz] — Confirmar a exclusão
 
-#### **RN008 - Padrão de impressão**
-Toda AIH a ser impressa pelo sistema deve obedecer ao padrão de formato e conteúdo estabelecido pelo Ministério da Saúde para esse tipo de documento, devendo estar de acordo com IN002.  
+- **Dado que** a confirmação de exclusão está aberta e o motivo está preenchido
+- **Quando** Contas Médicas aciona "Confirmar Exclusão"
+- **Então** a AIH deixa de constar na listagem do atendimento `HU02-R11`
+- **E** o sistema registra quem excluiu, a data e a hora e o motivo informado `HU02-R07`
+- **E** fecha a confirmação e exibe: "AIH excluída com sucesso. Motivo registrado: [motivo informado]."
 
-#### **RN009 - Permissão de exclusão**
-Apenas usuários com perfil autorizado (Contas Médicas ou Administrador) podem excluir uma AIH.  
+### HU02-C14: [erro] — Exclusão sem motivo
 
-#### **RN0010 - Motivo obrigatório**
-Toda exclusão de nova AIH criada deve ser acompanhada de um motivo informado pelo usuário.  
+- **Dado que** a confirmação de exclusão está aberta e o motivo está em branco
+- **Quando** Contas Médicas aciona "Confirmar Exclusão"
+- **Então** o sistema mantém a confirmação aberta e não exclui a AIH `HU02-R10`
+- **E** exibe: "O preenchimento do motivo da exclusão é obrigatório."
+- **E** não registra exclusão
 
-#### **RN0011 - Registro de exclusão**
-O sistema deve registrar em log: usuário, data/hora da exclusão e motivo informado.  
+### HU02-C15: [caminho-feliz] — Excluir a única AIH
 
-#### **RN0012 - Confirmação de exclusão**
-O sistema deve sempre solicitar confirmação antes de excluir uma AIH.  
+- **Dado que** a confirmação está aberta para a única AIH do atendimento e o motivo está preenchido
+- **Quando** Contas Médicas aciona "Confirmar Exclusão"
+- **Então** a AIH deixa de constar na listagem `HU02-R11`
+- **E** a área de AIHs exibe: "Nenhuma AIH vinculada a este atendimento até o momento."
+- **E** "Criar Nova AIH" permanece habilitado
 
----
+### HU02-C16: [caminho-feliz] — Exportar para o Autorizador
 
-### **5. OUTRAS INFORMAÇÕES RELEVANTES**
+- **Dado que** o atendimento está encerrado e tem AIH vinculada
+- **Quando** Contas Médicas aciona "Exportar para Autorizador"
+- **Então** o sistema envia os dados do atendimento no layout citado como Anexo IV `HU02-R06`
+- **E** registra quem exportou, a data e a hora e o resultado de sucesso `HU02-R07`
+- **E** exibe: "Dados do atendimento exportados com sucesso para o Autorizador da SESMA."
 
-**IN001 - Modelo de referência para a tela de Detalhes do Atendimento.**
+### HU02-C17: [erro] — Autorizador indisponível
 
-![Tela Detalhes do Atendimento](hu002_-_tela_detalhes_do_atendimento.png)
+- **Dado que** o Autorizador da SESMA está indisponível
+- **Quando** Contas Médicas aciona "Exportar para Autorizador"
+- **Então** o sistema exibe: "Não foi possível comunicar com o Autorizador da SESMA no momento. Verifique a conexão e tente novamente mais tarde."
+- **E** registra a tentativa, com data e hora, a identificação de quem acionou e o resultado de falha `HU02-R06` `HU02-R07`
+- **E** mantém os dados do atendimento inalterados
 
-**IN002: Modelo de referencia para a nova AIH gerada pelo sistema:**
+### HU02-C18: [estado-vazio] — Sem AIH para exportar
 
-![Nova AIH](hu002_modelo_nova_aih.png)
+- **Dado que** o paciente não tem AIH vinculada
+- **Quando** Contas Médicas visualiza as opções de exportação
+- **Então** "Exportar para Autorizador" fica desabilitado
+- **E** a orientação exibida é: "Adicione ao menos uma AIH para habilitar a exportação."
 
-**IN003: Modelo de Prontuário Eletrônico Simplificado do Paciente:**
-![Prontuário Eletônico Simplificado](hu002_pront_eletron_simplif_paciente.png)
+### HU02-C19: [permissao] — Perfil autorizado
 
+- **Dado que** a pessoa autenticada tem o perfil "Contas Médicas" ou "Administrador"
+- **Quando** essa pessoa visualiza a lista de AIHs
+- **Então** "Editar" e "Excluir" ficam habilitados em cada AIH `HU02-R02` `HU02-R09`
+- **E** "Criar Nova AIH" e "Exportar para Autorizador" ficam habilitados
 
----
+### HU02-C20: [permissao] — Perfil sem permissão de faturamento
 
+- **Dado que** a pessoa autenticada tem perfil de consulta ou recepção, sem permissão para faturamento
+- **Quando** essa pessoa visualiza "Detalhes do Atendimento"
+- **Então** o sistema oculta "Editar", "Excluir" e "Criar Nova AIH" `HU02-R09`
+- **E** mantém visíveis "Ver Prontuário", "Imprimir" e "Voltar"
+
+### HU02-C21: [permissao] — Ação restrita disparada sem permissão
+
+- **Dado que** a pessoa autenticada não tem permissão para excluir AIH
+- **Quando** essa pessoa dispara a exclusão de uma AIH
+- **Então** o sistema não executa a exclusão `HU02-R09`
+- **E** exibe: "Você não possui permissão para executar esta ação."
+- **E** registra a tentativa não autorizada `HU02-R07`
+
+### HU02-C22: [estado-vazio] — Perfil autorizado sem AIH
+
+- **Dado que** a pessoa autenticada tem o perfil "Contas Médicas" ou "Administrador" e a lista de AIHs está vazia
+- **Quando** essa pessoa visualiza "Detalhes do Atendimento"
+- **Então** "Criar Nova AIH" fica habilitado em destaque
+- **E** "Editar" e "Excluir" não aparecem
+
+## 4. Regras de Negócio
+
+### HU02-R01 — Identificação e AIHs do atendimento
+
+A tela de detalhamento mostra a identificação do paciente e as AIHs vinculadas àquele atendimento.
+
+Demonstrada por: HU02-C01, HU02-C02, HU02-C04
+
+### HU02-R02 — Ações da AIH conforme origem e perfil
+
+As ações sobre cada AIH dependem da lista de origem e do perfil de quem visualiza.
+
+Demonstrada por: HU02-C01, HU02-C02, HU02-C19, HU02-C20
+
+### HU02-R03 — Ação de criar nova AIH
+
+O perfil autorizado dispõe da ação de criar nova AIH na tela de detalhamento, inclusive quando a lista de AIHs está vazia.
+
+Demonstrada por: HU02-C01, HU02-C04, HU02-C15, HU02-C22
+
+### HU02-R04 — Consulta ao prontuário
+
+A tela de detalhamento oferece a consulta ao prontuário do paciente.
+
+Demonstrada por: HU02-C05
+
+### HU02-R05 — Retorno sem perder a lista
+
+O retorno à lista de origem preserva filtros, paginação e pesquisa.
+
+Demonstrada por: HU02-C06
+
+### HU02-R06 — Exportação ao Autorizador
+
+A exportação envia os dados do atendimento ao Autorizador da SESMA e registra o resultado.
+
+Demonstrada por: HU02-C16, HU02-C17
+
+### HU02-R07 — Registro das tentativas observadas
+
+O sistema registra identificação, data e hora na impressão, na exclusão confirmada, na exportação e nas tentativas bloqueadas por falha de comunicação ou por falta de permissão.
+
+Demonstrada por: HU02-C03, HU02-C07, HU02-C09, HU02-C10, HU02-C13, HU02-C16, HU02-C17, HU02-C21
+
+### HU02-R08 — Padrão de impressão da AIH
+
+A AIH impressa segue o padrão de formato e conteúdo do Ministério da Saúde para esse documento.
+
+Demonstrada por: HU02-C09
+
+### HU02-R09 — Quem exclui
+
+Somente "Contas Médicas" ou "Administrador" exclui uma AIH.
+
+Demonstrada por: HU02-C12, HU02-C19, HU02-C20, HU02-C21
+
+### HU02-R10 — Motivo obrigatório
+
+A exclusão só se conclui com o motivo preenchido.
+
+Demonstrada por: HU02-C12, HU02-C13, HU02-C14
+
+### HU02-R11 — Efeito da exclusão confirmada
+
+A exclusão confirmada retira a AIH da listagem do atendimento e guarda o motivo informado.
+
+Demonstrada por: HU02-C13, HU02-C15
+
+### HU02-R12 — Confirmação antes de excluir
+
+Nenhuma exclusão de AIH ocorre sem a confirmação explícita.
+
+Demonstrada por: HU02-C12
+
+## 5. Outras Informações Relevantes
+
+### HU02-I01 — Tela de detalhes do atendimento
+
+- **Caráter:** Ilustrativo
+- **Alvo:** `[REFERÊNCIA INDISPONÍVEL: hu002_-_tela_detalhes_do_atendimento.png]`
+
+### HU02-I02 — Modelo de AIH impressa
+
+- **Caráter:** Ilustrativo
+- **Alvo:** `[REFERÊNCIA INDISPONÍVEL: hu002_modelo_nova_aih.png]`
+
+O padrão exigido no aceite está em HU02-R08 e em HU02-C09. Esta imagem não substitui esse padrão.
+
+### HU02-I03 — Prontuário
+
+- **Caráter:** Ilustrativo
+- **Alvo:** `[REFERÊNCIA INDISPONÍVEL: hu002_pront_eletron_simplif_paciente.png]`
+
+### HU02-I04 — Layout de exportação
+
+- **Caráter:** Ilustrativo
+- **Alvo:** `[REFERÊNCIA INDISPONÍVEL: Anexo IV]`
+
+HU02-C16 cita esse layout. O arquivo não está no pacote e o conteúdo dele não foi presumido.
+
+## 6. O que esta História NÃO cobre
+
+- Criação e edição do conteúdo de uma AIH nova. O botão "Criar Nova AIH" aparece no aceite; o preenchimento da AIH fica fora.
+- Edição dos campos de uma AIH já listada. "Editar" aparece para o perfil autorizado; o formulário de edição fica fora.
+
+## 7. Suposições e Dúvidas Abertas
+
+- `[CONFIRMAR]` Texto da mensagem quando não há AIH para impressão, em HU02-C11. Impacto: o aceite da seção vazia de impressão não tem frase verificável.
+- `[CONFIRMAR]` A criação de nova AIH depende de existirem procedimentos além do gerador da AIH inicial, ou o botão fica disponível sempre que o perfil é autorizado. Os cenários mostram o botão sem esse dado. Impacto: o desenvolvedor teria de decidir quando habilitar "Criar Nova AIH".
+
+## 8. Lista de atualizações
+
+| Autor | Data | Descrição |
+| --- | --- | --- |
+| Angela Maria Amador | — | Versão de origem, com os comportamentos deste exemplo. |
+| Alinhamento de forma | 2026-10-19 | Identificador `HU-02`, seções 1 a 8, um evento por cenário, regras sem roteiro de tela e referências visuais marcadas como ilustrativas. Nenhuma mensagem nova foi escrita. |

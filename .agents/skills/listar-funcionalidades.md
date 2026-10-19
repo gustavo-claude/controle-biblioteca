@@ -75,7 +75,7 @@ Grave em `entregas/AAAA-MM-DD-lista-funcionalidades.md`. Se esse arquivo já exi
 
 | ID | Funcionalidade | Descrição | Problema que Resolve | Benefícios que Traz |
 | --- | --- | --- | --- | --- |
-| **F001** | [Ação] [resultado] de [objeto] | [Quem age e o que o sistema faz de observável] | [Dor ou gambiarra citada no contexto] | [Efeito concreto dessa ação] |
+| **F01** | [Ação] [resultado] de [objeto] | [Quem age e o que o sistema faz de observável] | [Dor ou gambiarra citada no contexto] | [Efeito concreto dessa ação] |
 
 ### Limites e Não-Escopo
 
@@ -86,7 +86,7 @@ Grave em `entregas/AAAA-MM-DD-lista-funcionalidades.md`. Se esse arquivo já exi
 - `[CONFIRMAR]` [Lacuna do contexto que impediu uma linha ou um detalhe]
 ```
 
-IDs seguem `F001`, `F002`, sem pular número. A seção Pendências só aparece se houver lacuna.
+IDs seguem `F01`, `F02`, com dois algarismos e sem pular número. De `F01` a `F09` o zero à esquerda permanece. Não use três algarismos (`F001`). A seção Pendências só aparece se houver lacuna.
 
 ---
 
