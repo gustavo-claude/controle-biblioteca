@@ -7,7 +7,7 @@ description: "Conduz, de preferência com o @analista, o wireflow de uma funcion
 
 > 💡 **MECANISMO DE DISPARO:**
 > Use de preferência com o `@analista`. O resultado é um wireflow de **uma** funcionalidade: os frames que expressam a coluna **Passos**. Seta só liga frames cuja reação muda a tela. Passos que exibem conteúdo na mesma janela permanecem no mesmo frame. O artefato serve para mostrar ao cliente o comportamento esperado, com posição dos elementos e reações. Detalhe estético fica de fora.
-> O operador participa das escolhas. Não desenhe o wireflow fechado no primeiro turno.
+> O operador participa das escolhas. Não desenhe o wireflow fechado no primeiro turno. No início das rodadas, nomeie os grupos de cada frame antes de propor elementos, para o operador não antecipar um grupo que ainda será discutido.
 
 ---
 
@@ -70,30 +70,50 @@ Só depois do mapa confirmado. Cada grupo é uma rodada, dentro de um frame do m
 
 Cabeçalho, filtros, área principal e ações são exemplos de grupo. Não são obrigatórios em toda funcionalidade. O grupo existe porque o passo precisa daqueles elementos.
 
-Em cada rodada, proponha o conjunto de elementos **e** a posição deles no frame. Ofereça mais de uma opção. A última entrada da lista é sempre texto livre.
+No primeiro turno deste passo, antes das opções do grupo 1, liste o nome de cada grupo de cada frame, na ordem das rodadas. O nome é curto e diz o que o grupo reúne. Sem elementos e sem posição. A lista mostra como cada frame foi cortado. O operador a lê antes de comentar a proposta da vez, e assim não pede agora o que já está reservado a um grupo posterior.
+
+```text
+Grupos deste wireflow — [N] rodadas
+
+Frame A — [rótulo da janela]
+1. [nome do grupo]
+2. [nome do grupo]
+
+Frame B — [rótulo da janela]
+3. [nome do grupo]
+
+A rodada de agora trata só do grupo 1. Os outros nomes entram nas rodadas seguintes. Não antecipe esses grupos nesta resposta.
+```
+
+A lista sai no mesmo turno da primeira rodada. Não é uma parada nova e não abre grupo futuro. Com um frame só, liste os grupos desse frame. Em cada rodada seguinte, antes das opções, repita os nomes ainda não discutidos daquele frame.
+
+Em cada rodada, proponha o conjunto de elementos **e** a posição deles no frame. As opções cobrem só o grupo da vez. Ofereça mais de uma opção. A última entrada da lista é sempre texto livre.
 
 ```text
 Grupo [k] de [N] — frame [A] — passos [n a m]
+Grupos seguintes deste frame, ainda não discutidos: [nomes]. Não inclua esses elementos nesta escolha.
 
-1. [Elementos e posição na tela]
-2. [Outra composição e outra posição, ainda cobrindo os mesmos passos]
-3. Outra: descreva em texto os elementos e a posição.
+1. [Elementos e posição na tela, só deste grupo]
+2. [Outra composição e outra posição, ainda cobrindo os mesmos passos deste grupo]
+3. Outra: descreva em texto os elementos e a posição deste grupo.
 ```
 
 A lista pode ter mais de duas propostas. Não pode ter só uma. Não omita a entrada "Outra".
 
-**Pare e aguarde.** Não avance ao grupo seguinte no mesmo turno. Não desenhe o wireflow consolidado nem grave arquivo enquanto houver grupo sem escolha.
+**Pare e aguarde.** Não avance ao grupo seguinte no mesmo turno. Não desenhe o wireflow consolidado nem grave arquivo enquanto houver grupo sem escolha. Se a resposta falar de um grupo nomeado que ainda não é o da vez, não abra essa rodada. Avise que aquele nome será discutido na rodada dele. Nesta rodada, vale só o que cabe ao grupo atual.
 
-A opção escolhida vale para aquele grupo. Se a resposta for "Outra", use o texto do operador como está. Não troque por uma proposta anterior. Se a resposta mudar a quantidade de grupos restantes, ajuste N sem passar de 10 nem ficar abaixo de 2.
+A opção escolhida vale para aquele grupo. Se a resposta for "Outra", use o texto do operador como está. Não troque por uma proposta anterior. Se a resposta mudar a quantidade de grupos restantes, ajuste N sem passar de 10 nem ficar abaixo de 2. Ao ajustar N, renomeie os grupos restantes e mostre a lista atualizada no turno seguinte, antes das opções.
 
 ### Passo 3 — Layout preliminar em ASCII
 
 Só depois da última rodada, desenhe o wireflow em ASCII.
 
 - Um bloco por frame confirmado no mapa.
-- Seta somente entre frames, com a reação do sistema (`-->` e o texto da reação).
+- A primeira linha de cada bloco, à esquerda, é o título: `Frame A - [nome do frame]`. O mesmo formato vale para os frames seguintes.
+- Seta somente entre frames, com a reação do sistema (`-->` e o texto da reação). O traço não corta texto nem o interior de outro frame.
 - Frame único: um bloco. Os passos ficam indicados dentro do bloco, sem seta entre eles.
 - Baixa fidelidade: borda, caixa, rótulo e ação. Proporção e agrupamento. Sem tratamento visual.
+- O texto de cada botão começa com letra maiúscula.
 
 ### Passo 4 — Inventário funcional de componentes
 
@@ -115,9 +135,18 @@ Se o arquivo dessa data e desse `F00X` já existir, acrescente um sufixo curto a
 
 O SVG é o mesmo wireflow: um frame por bloco do ASCII. Seta só quando o mapa tiver mais de um frame, no padrão de `wireframe-bom.svg`.
 
-- Traço `#111111`, cantos `rx`, tipo legível, espaço entre frames.
+- Traço `#111111`, cantos `rx`, espaço entre frames.
 - Cor só como realce funcional (ex.: azul suave `#dbeafe` no frame do passo corrente). A seta usa o mesmo traço, sem enfeite.
 - Proibido o que `wireframe-ruim.svg` mostra: card inteiro em cor de alerta, botão em pílula colorida, gradiente, sombra pesada, alta fidelidade.
+
+Leitura do SVG, obrigatória:
+
+- Título de cada frame no canto superior esquerdo, no formato `Frame A - [nome do frame]`. Vale para todos os frames. O título não fica no centro nem no meio do frame.
+- O texto de cada botão começa com letra maiúscula (`Descartar`, `Salvar rascunho`, `Confirmar`).
+- Conteúdo interno do frame — botão e demais rótulos do sistema: no mínimo 17px.
+- Orientações de fluxo e as outras descrições — título do frame, texto da seta, passo e reação: 22px. Sempre maior que o conteúdo interno.
+- A seta não passa por cima de texto, de outro rótulo nem do interior de um frame. Corre na faixa entre os frames. O rótulo fica ao lado do traço, com folga, sem encostar em outro texto. A seta só toca a borda do frame de destino. A ponta aponta na direção do último trecho.
+- Grave o arquivo em UTF-8. No texto, use hífen (`-`). Não use travessão.
 
 ---
 
@@ -139,7 +168,7 @@ O SVG é o mesmo wireflow: um frame por bloco do ASCII. Seta só quando o mapa t
 
 Passo 1 — [ação da persona]
 +------------------------------------------+
-| FRAME 1 — [rótulo do passo]              |
+| Frame A - [nome do frame]                |
 | [elementos na posição escolhida]         |
 +------------------------------------------+
         |
@@ -147,7 +176,7 @@ Passo 1 — [ação da persona]
         v
 Passo 2 — [ação da persona]
 +------------------------------------------+
-| FRAME 2 — [rótulo do passo]              |
+| Frame B - [nome do frame]                |
 | [elementos na posição escolhida]         |
 +------------------------------------------+
 
@@ -187,9 +216,16 @@ Frame único: um bloco só. Liste os passos dentro dele. Não desenhe seta entre
 - Ação listada em Limites e Não-Escopo.
 - Detalhe estético: cor de marca, ícone decorativo, tipografia final, espaçamento de produto.
 - Opção única na rodada, ou rodada sem a entrada "Outra".
+- Rodada aberta sem o operador ter visto os nomes dos grupos daquele frame.
+- Proposta da rodada que já inclui elementos de um grupo nomeado para rodada posterior.
 - Arquivo gravado antes da confirmação da funcionalidade, antes da confirmação do mapa de frames ou antes do fim das rodadas.
 - Frame novo para passo que só exibe ou lê conteúdo no arranjo já aberto.
 - Seta entre passos do mesmo frame.
+- Seta que cruza texto, outro rótulo ou o interior de um frame.
+- Botão cujo texto começa com letra minúscula.
+- Título de frame fora do canto superior esquerdo, ou em formato diferente de `Frame A - [nome do frame]`.
+- Conteúdo interno do frame abaixo de 17px.
+- Orientação de fluxo abaixo de 22px, ou menor que o conteúdo interno.
 
 ---
 
@@ -200,11 +236,17 @@ Frame único: um bloco só. Liste os passos dentro dele. Não desenhe seta entre
 [ ] Passo que só exibe ou lê conteúdo no arranjo aberto permaneceu no mesmo frame?
 [ ] O ciclo cobre uma única linha da lista mais recente em entregas/funcionalidades/?
 [ ] Seta só aparece entre frames, com a reação do passo?
+[ ] No primeiro turno do passo 2, antes das opções do grupo 1, os grupos de cada frame foram nomeados na ordem das rodadas?
+[ ] Cada rodada deixou explícitos os grupos seguintes ainda não discutidos, e a escolha ficou só no grupo da vez?
 [ ] Houve de 2 a 10 rodadas, cada uma com mais de uma proposta e a entrada "Outra"?
 [ ] Cada rodada esperou a escolha antes da seguinte?
 [ ] O ASCII preliminar mostra um bloco por frame confirmado? Seta só entre frames?
 [ ] O inventário (passo 4), os estados e as notas (passo 5) e os arquivos Markdown e SVG (passo 6) foram produzidos só depois das rodadas?
 [ ] Limites e Não-Escopo foram respeitados? Rótulos batem com o glossário? Regras [RN-XX] vigentes estão citadas?
 [ ] O SVG segue wireframe-bom.svg e evita wireframe-ruim.svg?
+[ ] Cada frame traz o título `Frame A - [nome do frame]` no canto superior esquerdo?
+[ ] O texto de cada botão começa com letra maiúscula?
+[ ] O conteúdo interno do frame tem no mínimo 17px, e as orientações de fluxo têm 22px?
+[ ] Nenhuma seta cruza texto, outro rótulo ou o interior de um frame? O rótulo da seta fica ao lado do traço, e a ponta segue o último trecho?
 [ ] O artefato mostra comportamento (posição e reação), sem detalhe estético?
 -->
