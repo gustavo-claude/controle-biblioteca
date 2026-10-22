@@ -23,7 +23,7 @@ exemplos/
 
 - **Especificação boa (`especificacoes/especifcacao-boa.md`):** Mostra à IA a profundidade, a formatação, o nível de detalhe dos critérios de aceitação e como vincular regras de negócio.
 - **Especificação ruim (`especificacoes/especificacao-ruim.md`):** Ensina à IA os vícios mais comuns que ela deve evitar a todo custo (soluções técnicas prematuras, adjetivos vagos, falta de caminhos de erro).
-- **Funcionalidades boas (`funcionalidades/funcionalidades-bom.md`):** Mostra a tabela de funcionalidades, com descrição, problema que resolve e benefícios, mais os limites e o não-escopo vindos do contexto e do analista.
+- **Funcionalidades boas (`funcionalidades/funcionalidades-bom.md`):** Mostra uma tabela por funcionalidade, com descrição, problema que resolve e benefícios, mais os limites e o não-escopo vindos do contexto e do analista.
 - **Funcionalidades ruins (`funcionalidades/funcionalidades-ruim.md`):** Mostra a lista solta, sem problema nem benefício, com solução técnica, escopo inflado e não-escopo que não exclui nada.
 
 ---

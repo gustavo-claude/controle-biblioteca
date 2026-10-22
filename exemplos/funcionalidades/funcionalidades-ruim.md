@@ -1,7 +1,7 @@
 # [EXEMPLO RUIM] Lista de Funcionalidades do Produto: Classificação de Risco
 
 > ⚠️ **CONTRA-EXEMPLO ANOTADO (O QUE NÃO FAZER):**  
-> Este documento reúne os erros mais comuns ao listar funcionalidades de um sistema. Compare com `funcionalidades-bom.md`: lá cada item é uma linha de tabela, o título da funcionalidade segue Ação, Resultado e Objeto, há problema e benefício, e os limites vêm do contexto.
+> Este documento reúne os erros mais comuns ao listar funcionalidades de um sistema. Compare com `funcionalidades-bom.md`: lá cada funcionalidade é uma tabela, o título segue Ação, Resultado e Objeto, há problema e benefício, e os limites vêm do contexto.
 
 ---
 
@@ -9,7 +9,7 @@
 
 - Triagem inteligente  
   > ❌ **ERRO 1 (Lista solta, sem tabela):** Não há ID, descrição, problema nem benefício. "Inteligente" não diz o que a pessoa faz no sistema.  
-  > 🛠️ **Como corrigir:** Uma linha da tabela, como em `funcionalidades-bom.md`: ID, funcionalidade, descrição, problema que resolve e benefícios que traz.
+  > 🛠️ **Como corrigir:** Uma tabela por funcionalidade, como em `funcionalidades-bom.md`: o ID no título e, em linhas, funcionalidade, descrição, problema que resolve, benefícios que traz e passos.
 
 - Tela moderna, robusta e em tempo real, feita em React, com a fila gravada no Redis  
   > ❌ **ERRO 2 (Adjetivo vago e solução técnica):** "Moderna" e "robusta" não se testam. React e Redis são decisão de engenharia, não funcionalidade.  
