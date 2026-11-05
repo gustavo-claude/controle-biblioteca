@@ -8,32 +8,12 @@
 
 ## As 6 Linhas Fundamentais
 
-- **O que é:** [PREENCHER: Definição em 1 frase direta — O que o sistema faz na prática]
-- **Para quem:** [PREENCHER: Quem são os usuários primários que utilizam a interface diariamente]
-- **Qual a dor:** [PREENCHER: Qual o problema concreto que motivou a criação do sistema]
-- **O que substitui:** [PREENCHER: O que as pessoas usam hoje — ex: planilhas Excel, e-mails soltos, sistema legado X]
-- **Dar certo é:** [PREENCHER: Métrica clara de sucesso — ex: reduzir o tempo de resposta de 2 dias para 4 horas]
-- **O que NÃO faz:** [PREENCHER: O limite imediato de escopo — ex: não emite notas fiscais nem processa pagamentos]
-
----
-
-## Contraste Didático de Preenchimento
-
-### ❌ Exemplo Fraco (Vago e decorativo):
-> - **O que é:** Um sistema inovador e robusto de gestão de atendimento.
-> - **Para quem:** Para todos os colaboradores da empresa.
-> - **Qual a dor:** Melhorar a comunicação e a sinergia.
-> - **Dar certo é:** Deixar os clientes felizes e satisfeitos.
-
-### ✅ Exemplo Bom (Concreto e factual — Domínio Neutro):
-> - **O que é:** Sistema web interno para registro, triagem e resolução de chamados técnicos de TI.
-> - **Para quem:** Atendentes de suporte N1 e analistas de infraestrutura N2.
-> - **Qual a dor:** Chamados solicitados por mensagem privada no Teams que se perdem sem registro de SLA.
-> - **O que substitui:** Uma planilha compartilhada do Google Sheets atualizada manualmente.
-> - **Dar certo é:** 100% dos chamados terem protocolo e 0 chamados ficarem mais de 24h sem primeira resposta.
-> - **O que NÃO faz:** Não gerencia inventário de patrimônio nem compra de novos equipamentos.
-
----
+- **O que é:** Sistema de controle de empréstimos e registro de obras para uma biblioteca comunitária.
+- **Para quem:** membros do centro comunitário que precisam fazer a gestão do acervo e dos empréstimos da biblioteca
+- **Qual a dor:** Ausência de uma estrutura para registro de empréstimos e manutenção do acervo, listas em papel não atendem a demanda devido dificuldades de armazenamento e falta de padronização.
+- **O que substitui:** agendas em papel e fichas catalográficas em papel
+- **Dar certo é:** simplificar o registro de empréstimos e o armazenmento de informações sobre livros e demais obras, facilitando a inclusão e a remoção de informações.
+- **O que NÃO faz:** Não é sistema de loja de livros, não é um sistema de automação com IA, não dispensa participação humana, não permite que os dados sejam compartilhados com outras ferramentas da internet.
 
 <!--
 📋 CHECKLIST DE VALIDAÇÃO DESTE ARQUIVO:
