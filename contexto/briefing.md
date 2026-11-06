@@ -1,4 +1,4 @@
-# Briefing do Produto: [Nome do Produto]
+# Briefing do Produto: Biblioteca Limoeiro
 
 > 💡 **PAPEL DESTE ARQUIVO:**  
 > O briefing é o resumo mínimo e concentrado do produto (15 a 20 linhas). Ele serve para calibrar rapidamente a IA quando você precisa de respostas ágeis sem carregar dezenas de documentos.  

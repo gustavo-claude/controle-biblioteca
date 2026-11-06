@@ -8,27 +8,66 @@
 
 ## 1. Catálogo de Regras de Negócio Gerais
 
-### `[RN-01]` — [Nome Curto da Regra — Ex: Unicidade de Responsável]
-- **Descrição:** [PREENCHER: Descrição detalhada e inequívoca da regra]  
-  *Ex: Um chamado só pode ter 1 atendente atribuído como responsável principal por vez.*
-- **Impacto:** Impede conflitos de atendimento e respostas duplicadas ao solicitante.
+### `[RN-01]` — Consulta aberta da disponibilidade
+- **Descrição:** O leitor consulta a disponibilidade do acervo em página aberta, sem login.
+- **Impacto:** A consulta não exige usuário nem senha. Cadastro, empréstimo e configuração continuam fora dessa página.
 - **Exceção autorizada:** Nenhuma.
 
 ---
 
-### `[RN-02]` — [Nome Curto da Regra — Ex: Prazo Padrão de Primeira Resposta]
-- **Descrição:** [PREENCHER: Descrição da regra com prazos ou limites]  
-  *Ex: Todo chamado categorizado como 'Crítico' deve receber primeira resposta em até 2 horas úteis.*
-- **Impacto:** Dispara alerta visual amarelo no painel quando faltar 30 minutos para o estouro.
-- **Exceção autorizada:** Chamados abertos fora do horário comercial iniciam a contagem no próximo dia útil.
+### `[RN-02]` — Gestão somente com login
+- **Descrição:** Só o gestor da biblioteca, autenticado com usuário e senha, altera o acervo, os empréstimos, os usuários e os prazos.
+- **Impacto:** Leitor sem login não inclui nem remove obra, não registra empréstimo e não muda configuração.
+- **Exceção autorizada:** Nenhuma.
 
 ---
 
-### `[RN-03]` — [Nome Curto da Regra — Ex: Bloqueio de Cancelamento com Histórico]
-- **Descrição:** [PREENCHER: Regra de validação de ação]  
-  *Ex: Não é permitido cancelar chamados que já estejam no status 'Em Atendimento' ou 'Resolvido' sem autorização expressa do Supervisor.*
-- **Impacto:** Evita perda de horas trabalhadas pelos analistas.
-- **Exceção autorizada:** Apenas usuários com o perfil 'Supervisor' possuem o botão de cancelamento forçado com justificativa obrigatória.
+### `[RN-03]` — Empréstimo liga leitor e exemplar
+- **Descrição:** Um empréstimo registra a retirada de um exemplar por um leitor. Os dois são obrigatórios.
+- **Impacto:** Não há empréstimo sem leitor e sem exemplar identificados.
+- **Exceção autorizada:** Nenhuma.
+
+---
+
+### `[RN-04]` — Exemplar indisponível não sai
+- **Descrição:** Exemplar que não está disponível não é emprestado. O sistema informa a data prevista de devolução. A data prevista está no exemplar emprestado. [CONFIRMAR] qual data mostrar quando a mesma obra tiver mais de um exemplar fora, e o que informar quando o exemplar está indisponível sem empréstimo.
+- **Impacto:** A retirada não se conclui. A pessoa vê quando a devolução está prevista.
+- **Exceção autorizada:** Nenhuma.
+
+---
+
+### `[RN-05]` — Teto de empréstimos por pessoa
+- **Descrição:** Cada pessoa pode ter até 3 empréstimos ao mesmo tempo. Empréstimo já devolvido não entra nessa conta.
+- **Impacto:** O empréstimo que ultrapassar 3 ativos da mesma pessoa não se conclui.
+- **Exceção autorizada:** Nenhuma.
+
+---
+
+### `[RN-06]` — Retirada imediata e prazo configurável
+- **Descrição:** A data de retirada é registrada no momento do empréstimo. A data prevista de devolução é calculada pelo prazo configurado pelo gestor. Não há quantidade fixa de dias.
+- **Impacto:** Todo empréstimo nasce com data de retirada e data prevista. Mudar o prazo é configuração do gestor, não um número fechado do produto.
+- **Exceção autorizada:** Nenhuma.
+
+---
+
+### `[RN-07]` — Devolução libera o exemplar
+- **Descrição:** A devolução registrada devolve o exemplar à situação disponível.
+- **Impacto:** O exemplar volta a poder ser emprestado. O empréstimo deixa de estar em aberto.
+- **Exceção autorizada:** Nenhuma.
+
+---
+
+### `[RN-08]` — Atraso e suspensão configurável
+- **Descrição:** Há atraso quando a data prevista de devolução passa e o exemplar não foi devolvido. O sistema pode ser configurado para suspender o leitor que não cumpriu esse prazo. A duração da suspensão e o que o leitor suspenso fica impedido de fazer estão [CONFIRMAR].
+- **Impacto:** O empréstimo atrasado fica identificado. Com a configuração ligada, o leitor que falhou o prazo é suspenso.
+- **Exceção autorizada:** Nenhuma.
+
+---
+
+### `[RN-09]` — Código único do exemplar
+- **Descrição:** Cada exemplar tem um código de identificação único.
+- **Impacto:** Dois exemplares não compartilham o mesmo código. O controle da retirada usa esse código.
+- **Exceção autorizada:** Nenhuma.
 
 ---
 
@@ -38,10 +77,11 @@
 
 | Parâmetro / Limite | Valor Oficial | Origem / Fonte da Definição | Onde se Aplica |
 |---|:--:|---|---|
-| **[Tamanho Máx. Anexo]** | 10 MB por arquivo | [Decisão de TI / Infraestrutura] | Abertura e resposta de chamados |
-| **[Formatos de Anexo]** | PDF, PNG, JPG, TXT | [Política de Segurança da Informação] | Upload de arquivos |
-| **[Tentativas de Login]** | 5 tentativas | [Norma de Segurança Corporativa] | Tela de autenticação |
-| **[Inatividade de Sessão]**| 30 minutos | [Política de Privacidade / LGPD] | Sessão web do usuário |
+| **Empréstimos ao mesmo tempo por pessoa** | 3 | Resposta do PO no portão de regras, sobre o limite de empréstimos ativos citado na fonte | Registro de empréstimo (`[RN-05]`) |
+| **Prazo de empréstimo e de devolução** | Configurável; sem quantidade de dias | Fonte (prazo estabelecido pela biblioteca) e respostas do PO nos portões de produto e de regras | Data prevista de devolução (`[RN-06]`) |
+| **Duração da suspensão por atraso** | [CONFIRMAR] | O PO autorizou a suspensão configurável e não informou quantidade de dias | Leitor em atraso (`[RN-08]`) |
+| **Itens do acervo digitalizados** | Mais de 100 | Resposta do PO no portão de produto; meta de ciclo, não limite de empréstimo | Meta principal em `produto.md` |
+| **Usuários cadastrados** | Pelo menos 20 | Resposta do PO no portão de produto; meta de ciclo. [CONFIRMAR] se "usuário" é leitor ou quem opera o sistema | Meta secundária em `produto.md` |
 
 ---
 
