@@ -125,7 +125,7 @@ Preencha só as seções já definidas no arquivo da vez.
 | Arquivo | Seções obrigatórias |
 |---|---|
 | `produto.md` | 1. Visão e proposta de valor (nome, frase, valor) · 2. Objetivos com número (meta principal, secundária, métrica de guarda) · 3. O que NÃO somos / NÃO fazemos / NÃO atendemos (mínimo 3 proibições) · 4. Grandes módulos (responsabilidade + quem utiliza, sem implementação técnica) · 5. Restrições estratégicas (disponibilidade, segurança, conformidade) |
-| `personas-usuario.md` | 2 a 5 personas. Cada uma: papel, perfil/rotina, objetivo principal no sistema, maior frustração/dor atual, workaround (gambiarra de hoje). Sem cargo abstrato sem rotina. Nome fictício só se o PO informar. |
+| `personas-usuario.md` | 2 a 5 personas. Cada uma: papel, perfil/rotina, objetivo principal no sistema, maior frustração/dor atual, workaround (gambiarra de hoje). Sem cargo abstrato sem rotina. Sem nome fictício: o papel basta. |
 | `regras-de-negocio.md` | 1. Catálogo `[RN-XX]` com nome curto, descrição, impacto e exceção autorizada · 2. Tabela de números/parâmetros com valor, origem e onde se aplica. IDs permanentes. |
 | `glossario.md` | 1. Termos canônicos (definição + o que NÃO é) · 2. Palavras proibidas e substituto · 3. Catálogo fechado de status · 4. Matriz de transições permitidas |
 
