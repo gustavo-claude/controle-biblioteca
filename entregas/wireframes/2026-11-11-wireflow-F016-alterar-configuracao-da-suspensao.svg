@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1040" width="1280" height="1040">
+  <rect width="1280" height="1040" fill="#ffffff"/>
+  <text x="40" y="36" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Passo 1. Na tela de registrar o empréstimo, ver a chave de suspensão daquele empréstimo.</text>
+  <text x="40" y="70" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Passo 2. Ligar a suspensão para aquele empréstimo, ou desligar.</text>
+  <text x="40" y="104" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Frame A - Chave da suspensão</text>
+
+  <rect x="40" y="128" width="1200" height="600" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+
+  <rect x="64" y="148" width="1152" height="52" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="80" y="180" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Biblioteca Limoeiro</text>
+  <rect x="340" y="156" width="130" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="405" y="180" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Acervo</text>
+  <rect x="482" y="156" width="156" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="560" y="180" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Usuários</text>
+  <rect x="650" y="156" width="190" height="36" fill="#dbeafe" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="745" y="180" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Empréstimos</text>
+  <rect x="852" y="156" width="180" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="942" y="180" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Relatórios</text>
+
+  <text x="80" y="240" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Registrar empréstimo</text>
+
+  <text x="80" y="284" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Leitor</text>
+  <rect x="80" y="296" width="460" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <rect x="560" y="296" width="180" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="650" y="326" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Suspenso</text>
+  <rect x="756" y="296" width="400" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="956" y="326" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Sem suspensão em vigor</text>
+
+  <text x="80" y="392" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Código do exemplar</text>
+  <rect x="80" y="404" width="460" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+
+  <text x="80" y="496" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Chave de suspensão</text>
+  <rect x="80" y="512" width="280" height="48" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+  <text x="220" y="542" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Ligar a suspensão</text>
+  <rect x="376" y="512" width="320" height="48" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+  <text x="536" y="542" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Desligar a suspensão</text>
+
+  <rect x="80" y="588" width="320" height="48" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+  <text x="240" y="618" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Registrar empréstimo</text>
+  <text x="80" y="676" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">operação feita com sucesso</text>
+
+  <text x="40" y="776" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Sem seta: os dois botões são alternativas nesta janela.</text>
+  <text x="40" y="820" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Ligada, a devolução atrasada pode suspender.</text>
+  <text x="40" y="852" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Desligada, não suspende.</text>
+  <text x="40" y="884" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">A suspensão não começa no atraso automático.</text>
+  <text x="40" y="916" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Diverge de RN-08.</text>
+</svg>

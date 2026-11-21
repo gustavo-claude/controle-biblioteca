@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1330" width="1200" height="1330">
+  <rect width="1200" height="1330" fill="#ffffff"/>
+  <text x="40" y="36" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Frame A - Área de gestão de usuários</text>
+  <text x="40" y="72" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Passo 1. Abrir o formulário do leitor, no cadastro ou na edição</text>
+  <rect x="40" y="92" width="1120" height="348" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+  <rect x="64" y="108" width="1072" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="84" y="142" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Biblioteca Limoeiro</text>
+  <rect x="500" y="118" width="120" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="560.0" y="142" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Acervo</text>
+  <rect x="632" y="118" width="148" height="36" fill="#dbeafe" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="706.0" y="142" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Usuários</text>
+  <rect x="792" y="118" width="176" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="880.0" y="142" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Empréstimos</text>
+  <rect x="980" y="118" width="140" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="1050.0" y="142" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Relatórios</text>
+  <text x="64" y="204" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Usuários</text>
+  <rect x="64" y="220" width="240" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="184" y="248" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Cadastrar gestor</text>
+  <rect x="320" y="220" width="240" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.8" rx="8"/>
+  <text x="440" y="248" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Cadastrar leitor</text>
+  <text x="64" y="304" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Nome</text>
+  <text x="480" y="304" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">CPF</text>
+  <line x1="64" y1="316" x2="1104" y2="316" stroke="#111111" stroke-width="1.5"/>
+  <line x1="72" y1="452" x2="72" y2="580" stroke="#111111" stroke-width="2"/>
+  <polygon points="64,580 80,580 72,596" fill="#111111"/>
+  <text x="104" y="484" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Abrir o formulário do leitor</text>
+  <text x="104" y="526" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Frame B - Formulário do leitor</text>
+  <text x="104" y="564" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Passos 2 a 4. Informar o máximo e ver a mensagem quando grava ou aguarda</text>
+  <rect x="40" y="596" width="1120" height="584" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+  <rect x="64" y="612" width="1072" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="84" y="646" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Biblioteca Limoeiro</text>
+  <rect x="500" y="622" width="120" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="560.0" y="646" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Acervo</text>
+  <rect x="632" y="622" width="148" height="36" fill="#dbeafe" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="706.0" y="646" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Usuários</text>
+  <rect x="792" y="622" width="176" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="880.0" y="646" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Empréstimos</text>
+  <rect x="980" y="622" width="140" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="1050.0" y="646" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Relatórios</text>
+  <text x="64" y="720" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Nome</text>
+  <rect x="64" y="736" width="480" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="620" y="720" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">CPF</text>
+  <rect x="620" y="736" width="480" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="64" y="828" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Telefone</text>
+  <rect x="64" y="844" width="480" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="620" y="828" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Endereço</text>
+  <rect x="620" y="844" width="480" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <rect x="64" y="908" width="424" height="36" fill="#dbeafe" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="78" y="936" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Máximo de empréstimos em paralelo</text>
+  <rect x="64" y="952" width="480" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="620" y="936" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Prazo</text>
+  <rect x="620" y="952" width="480" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <rect x="64" y="1060" width="320" height="48" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+  <text x="224" y="1090" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#111111">Concluir cadastro</text>
+  <text x="64" y="1144" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">operação feita com sucesso</text>
+  <text x="40" y="1220" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Fora do frame: o padrão é 2. Abaixo de 2 não grava.</text>
+  <text x="40" y="1254" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Se a redução esbarra em empréstimos em aberto, vale o máximo anterior</text>
+  <text x="40" y="1288" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">até a devolução ou o encerramento por extravio.</text>
+</svg>

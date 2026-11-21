@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1476" width="1960" height="1476">
+<rect width="1960" height="1476" fill="#ffffff"/>
+<text x="40" y="36" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Frame A - Área de gestão do acervo</text>
+<text x="40" y="68" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Passo 1 - Abrir a área de gestão do acervo</text>
+<rect x="40" y="96" width="1200" height="500" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+<rect x="60" y="112" width="1160" height="52" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<text x="76" y="145" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Biblioteca Limoeiro</text>
+<rect x="310" y="120" width="118" height="36" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+<text x="369.0" y="144" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Acervo</text>
+<rect x="436" y="120" width="140" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<text x="506.0" y="144" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Usuários</text>
+<rect x="584" y="120" width="168" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<text x="668.0" y="144" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Empréstimos</text>
+<rect x="760" y="120" width="150" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<text x="835.0" y="144" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Relatórios</text>
+<text x="64" y="200" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Acervo</text>
+<rect x="64" y="216" width="250" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<text x="189.0" y="246.0" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Adicionar obra</text>
+<rect x="330" y="216" width="250" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<text x="455.0" y="246.0" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Pesquisar acervo</text>
+<rect x="64" y="284" width="564" height="292" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="12"/>
+<text x="84" y="320" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Tipo</text>
+<text x="280" y="320" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Título ou nome</text>
+<line x1="84" y1="336" x2="608" y2="336" stroke="#111111" stroke-width="2"/>
+<rect x="652" y="284" width="564" height="292" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="12"/>
+<text x="672" y="320" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Código do exemplar</text>
+<text x="952" y="320" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Situação</text>
+<line x1="672" y1="336" x2="1196" y2="336" stroke="#111111" stroke-width="2"/>
+<text x="40" y="678" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Frame B - Editar obra</text>
+<text x="40" y="710" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Passos 3 a 6 - Editar a obra</text>
+<rect x="40" y="756" width="1200" height="640" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+<rect x="60" y="772" width="1160" height="52" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<text x="76" y="805" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Biblioteca Limoeiro</text>
+<rect x="310" y="780" width="118" height="36" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+<text x="369.0" y="804" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Acervo</text>
+<rect x="436" y="780" width="140" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<text x="506.0" y="804" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Usuários</text>
+<rect x="584" y="780" width="168" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<text x="668.0" y="804" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Empréstimos</text>
+<rect x="760" y="780" width="150" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<text x="835.0" y="804" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Relatórios</text>
+<text x="64" y="864" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Editar obra</text>
+<text x="64" y="904" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Dados do tipo</text>
+<rect x="64" y="920" width="1152" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<rect x="64" y="976" width="1152" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<rect x="64" y="1032" width="1152" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<rect x="64" y="1088" width="1152" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<rect x="64" y="1144" width="1152" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+<rect x="64" y="1208" width="280" height="48" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+<text x="204.0" y="1238.0" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Concluir a edição</text>
+<text x="64" y="1288" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">operação feita com sucesso</text>
+<line x1="860" y1="596" x2="860" y2="742" stroke="#111111" stroke-width="2"/>
+<polygon points="852,742 868,742 860,756" fill="#111111"/>
+<text x="876" y="666" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Identificar a obra</text>
+<text x="1276" y="804" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Os campos são os do tipo, iguais ao cadastro.</text>
+<text x="1276" y="840" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">[CONFIRMAR] Se o tipo pode ser trocado.</text>
+</svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" width="1280" height="760">
+  <rect width="1280" height="760" fill="#ffffff"/>
+  <text x="40" y="36" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Passo 1. Encerrar a suspensão do leitor ao fim da duração informada.</text>
+  <text x="40" y="70" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Passo 2. Na pesquisa do leitor, distinguir o suspenso de quem já encerrou a suspensão.</text>
+  <text x="40" y="104" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Passo 3. Permitir o empréstimo para o leitor cuja suspensão encerrou.</text>
+  <text x="40" y="138" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Frame A - Pesquisa do leitor</text>
+
+  <rect x="40" y="162" width="1200" height="400" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+
+  <rect x="64" y="182" width="1152" height="52" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="80" y="214" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Biblioteca Limoeiro</text>
+  <rect x="340" y="190" width="130" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="405" y="214" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Acervo</text>
+  <rect x="482" y="190" width="156" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="560" y="214" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Usuários</text>
+  <rect x="650" y="190" width="190" height="36" fill="#dbeafe" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="745" y="214" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Empréstimos</text>
+  <rect x="852" y="190" width="180" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="942" y="214" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Relatórios</text>
+
+  <text x="80" y="278" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Registrar empréstimo</text>
+  <text x="80" y="322" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Leitor</text>
+  <rect x="80" y="334" width="440" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <rect x="544" y="334" width="620" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="854" y="364" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Suspenso (empréstimo não segue)</text>
+  <rect x="544" y="398" width="620" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="854" y="428" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Suspensão encerrada (empréstimo pode seguir)</text>
+
+  <text x="40" y="612" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Sem seta: não há outra página.</text>
+  <text x="40" y="656" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">O sistema encerra a suspensão ao fim da duração, sem tela própria e sem log.</text>
+</svg>

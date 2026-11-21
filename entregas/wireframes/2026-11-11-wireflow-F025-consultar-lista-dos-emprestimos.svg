@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2480 860" width="2480" height="860">
+  <rect width="2480" height="860" fill="#ffffff"/>
+  <text x="40" y="36" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Passo 1a. Ver os empréstimos ativos, devolvidos, atrasados e encerrados por extravio.</text>
+  <text x="1360" y="36" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Passo 1b. Abrir a área de relatórios e ver o recorte dos leitores com empréstimo ativo.</text>
+  <text x="40" y="76" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Frame A - Área de gestão de empréstimos</text>
+  <text x="1360" y="76" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Frame B - Recorte nos relatórios</text>
+
+  <line x1="580" y1="112" x2="1196" y2="112" stroke="#111111" stroke-width="2"/>
+  <line x1="1284" y1="112" x2="1900" y2="112" stroke="#111111" stroke-width="2"/>
+  <text x="1240" y="120" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111" text-anchor="middle">ou</text>
+  <line x1="580" y1="112" x2="580" y2="172" stroke="#111111" stroke-width="2"/>
+  <polygon points="572,172 588,172 580,188" fill="#111111"/>
+  <text x="608" y="152" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Área de empréstimos</text>
+  <line x1="1900" y1="112" x2="1900" y2="172" stroke="#111111" stroke-width="2"/>
+  <polygon points="1892,172 1908,172 1900,188" fill="#111111"/>
+  <text x="1928" y="152" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Área de relatórios</text>
+
+  <rect x="40" y="188" width="1080" height="480" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+  <rect x="64" y="208" width="1032" height="52" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="80" y="240" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Biblioteca Limoeiro</text>
+  <rect x="300" y="216" width="120" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="360" y="240" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Acervo</text>
+  <rect x="432" y="216" width="150" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="507" y="240" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Usuários</text>
+  <rect x="594" y="216" width="180" height="36" fill="#dbeafe" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="684" y="240" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Empréstimos</text>
+  <rect x="786" y="216" width="170" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="871" y="240" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Relatórios</text>
+  <text x="80" y="304" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Empréstimos</text>
+  <rect x="740" y="272" width="300" height="48" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+  <text x="890" y="302" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Registrar empréstimo</text>
+  <rect x="80" y="328" width="470" height="140" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="100" y="360" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Ativo</text>
+  <rect x="570" y="328" width="470" height="140" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="590" y="360" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Devolvido</text>
+  <rect x="80" y="484" width="470" height="140" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="100" y="516" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Atrasado</text>
+  <rect x="570" y="484" width="470" height="140" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="590" y="516" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Encerrado por extravio</text>
+
+  <rect x="1360" y="188" width="1080" height="480" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+  <rect x="1384" y="208" width="1032" height="52" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="1400" y="240" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Biblioteca Limoeiro</text>
+  <rect x="1620" y="216" width="120" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="1680" y="240" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Acervo</text>
+  <rect x="1752" y="216" width="150" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="1827" y="240" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Usuários</text>
+  <rect x="1914" y="216" width="180" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="2004" y="240" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Empréstimos</text>
+  <rect x="2106" y="216" width="170" height="36" fill="#dbeafe" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="2191" y="240" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Relatórios</text>
+  <text x="1400" y="304" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Leitores com empréstimo ativo</text>
+  <rect x="1400" y="328" width="470" height="140" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="1420" y="360" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Ativo</text>
+
+  <text x="40" y="724" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">A consulta não gera log.</text>
+  <text x="40" y="756" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">A lista não é o painel dos 6 meses.</text>
+  <text x="40" y="788" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Se o sistema passou um empréstimo de ativo a atrasado, a lista mostra o status atrasado.</text>
+</svg>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1720" width="1680" height="1720">
+  <rect width="1680" height="1720" fill="#ffffff"/>
+  <text x="40" y="40" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Frame A - Área de gestão de empréstimos</text>
+  <text x="40" y="78" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Passo 1. Abrir a área de gestão de empréstimos</text>
+  <text x="40" y="116" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Passo 2. Identificar o empréstimo ativo ou atrasado</text>
+  <rect x="40" y="140" width="980" height="360" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+  <text x="64" y="180" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Biblioteca Limoeiro</text>
+  <rect x="64" y="200" width="150" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="139" y="228" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Acervo</text>
+  <rect x="226" y="200" width="170" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="311" y="228" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Usuários</text>
+  <rect x="408" y="200" width="210" height="44" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+  <text x="513" y="228" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Empréstimos</text>
+  <rect x="630" y="200" width="190" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="725" y="228" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Relatórios</text>
+  <line x1="64" y1="264" x2="996" y2="264" stroke="#111111" stroke-width="1.5"/>
+  <text x="64" y="300" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Lista</text>
+  <rect x="64" y="316" width="912" height="156" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="88" y="348" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Ativo</text>
+  <text x="400" y="348" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Atrasado</text>
+  <line x1="80" y1="364" x2="960" y2="364" stroke="#111111" stroke-width="1.5"/>
+  <line x1="80" y1="524" x2="80" y2="632" stroke="#111111" stroke-width="2.5"/>
+  <polygon points="68,632 92,632 80,652" fill="#111111"/>
+  <text x="112" y="596" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Registrar a devolução.</text>
+  <text x="40" y="700" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#111111">Frame B - Devolução</text>
+  <text x="40" y="738" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Passo 3a. Informar a duração da suspensão e seguir</text>
+  <text x="40" y="776" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Passo 3b. Seguir sem duração</text>
+  <text x="40" y="814" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Passo 4. Registrar a devolução do exemplar</text>
+  <text x="40" y="852" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Passo 5. Ver a mensagem operação feita com sucesso</text>
+  <rect x="40" y="876" width="980" height="800" fill="#ffffff" stroke="#111111" stroke-width="2.5" rx="16"/>
+  <text x="64" y="916" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111">Biblioteca Limoeiro</text>
+  <rect x="64" y="936" width="150" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="139" y="964" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Acervo</text>
+  <rect x="226" y="936" width="170" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="311" y="964" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Usuários</text>
+  <rect x="408" y="936" width="210" height="44" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+  <text x="513" y="964" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Empréstimos</text>
+  <rect x="630" y="936" width="190" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="725" y="964" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111" text-anchor="middle">Relatórios</text>
+  <line x1="64" y1="1000" x2="996" y2="1000" stroke="#111111" stroke-width="1.5"/>
+  <text x="64" y="1040" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Identificação do empréstimo</text>
+  <rect x="64" y="1052" width="640" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="64" y="1140" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Empréstimo</text>
+  <rect x="64" y="1152" width="210" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="169" y="1180" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Devolvido</text>
+  <text x="64" y="1236" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Exemplar</text>
+  <rect x="64" y="1248" width="230" height="44" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <text x="179" y="1276" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Disponível</text>
+  <text x="64" y="1332" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">Duração da suspensão</text>
+  <rect x="64" y="1344" width="640" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.5" rx="8"/>
+  <rect x="64" y="1420" width="420" height="52" fill="#dbeafe" stroke="#111111" stroke-width="2" rx="8"/>
+  <text x="274" y="1452" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Registrar a devolução</text>
+  <text x="64" y="1524" font-family="Segoe UI, sans-serif" font-size="18" fill="#111111">operação feita com sucesso</text>
+  <text x="1064" y="1332" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">O campo só aparece se o</text>
+  <text x="1064" y="1366" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">empréstimo está atrasado e a</text>
+  <text x="1064" y="1400" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">chave daquele empréstimo</text>
+  <text x="1064" y="1434" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">está ligada.</text>
+  <text x="1064" y="1476" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">Se a chave está desligada,</text>
+  <text x="1064" y="1510" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">a devolução não pede duração.</text>
+  <text x="1064" y="1552" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">[CONFIRMAR] Se a devolução</text>
+  <text x="1064" y="1586" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">se conclui sem a duração</text>
+  <text x="1064" y="1620" font-family="Segoe UI, sans-serif" font-size="22" fill="#111111">quando a chave está ligada.</text>
+</svg>
